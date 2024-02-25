@@ -1,10 +1,10 @@
-'use client';
-import React from 'react'
-import {motion} from 'framer-motion'
-import { SocialIcon } from 'react-social-icons';
-import Link from 'next/link';
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import { SocialIcon } from "react-social-icons";
+import Link from "next/link";
 
-type Props = {}
+type Props = {};
 
 export default function Header({}: Props) {
   return (
@@ -41,35 +41,34 @@ export default function Header({}: Props) {
           bgColor="transparent"
         />
       </motion.div>
-      <Link href="#contact">
-        <motion.div
-          initial={{
-            x: 500,
-            opacity: 0,
-            scale: 0.5,
-          }}
-          animate={{
-            x: 0,
-            opacity: 1,
-            scale: 1,
-          }}
-          transition={{
-            duration: 1.5,
-          }}
-          className="flex flex-row items-center text-gray-300 cursor-pointer"
-        >
+      <motion.div
+        initial={{
+          x: 500,
+          opacity: 0,
+          scale: 0.5,
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        className="flex flex-row items-center text-gray-300 cursor-pointer"
+      >
+        <Link href="#contact">
           <SocialIcon
             className="cursor-pointer"
             network="email"
-            url="#contact"
             fgColor="gray"
             bgColor="transparent"
           />
-          <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
+          {/* <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
             Get In Touch!
-          </p>
-        </motion.div>
-      </Link>
+          </p> */}
+        </Link>
+      </motion.div>
     </header>
-  )
+  );
 }
