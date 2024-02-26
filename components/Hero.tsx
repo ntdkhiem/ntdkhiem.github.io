@@ -34,7 +34,7 @@ const Sections = [
     fontColor: "white",
     subtitle: "Favorite thing to do in my free time?",
     title: "Soccer!",
-    body: "I've been playing soccer since I was 5 years old. I've played for my high school and intramural teams. I love the sport and the community it brings.",
+    body: "I've been playing soccer since I was 5 years old. I've played for my high school and intramural teams. I love the sport and the community it brings!",
   },
   {
     backgroundImage: "/background2.jpg",
@@ -43,11 +43,11 @@ const Sections = [
     imageHeight: "h-[400px]",
     imageWidth: "w-[600px]",
     imageCaption:
-      "Me hard at work before the open ceremony. Credits: @larissa.zhu on Instagram",
+      "Me hard at work before the HackUMA XI's opening ceremony. Credits: @larissa.zhu on Instagram",
     fontColor: "white",
     subtitle: "I live to help others.",
     title: "I'm a mentor/oragnizer!",
-    body: "I've been an organizer at HackUMass for the past 3 years. I've also been a mentor for the past 2 years. I love helping others and seeing them grow. I've learned so much from the community and I'm grateful for the experiences.",
+    body: "I've been an organizer at HackUMass for the past 3 years. I've also been a mentor for the past 2 years. I love helping others and seeing them grow. I've learned so much from the community and I'm grateful for the experiences. Check out their website: https://hackumass.com/",
   },
   {
     backgroundImage: "/back3.JPG",
@@ -105,7 +105,7 @@ export default function Hero({}: Props) {
       />
 
       {/* actual section */}
-      <div className="w-full self-center z-20">
+      <div className="w-full self-center z-20 hidden lg:block">
         <motion.img
           key={Sections[sectionId].image}
           initial={{ x: -50, opacity: 0 }}
@@ -134,7 +134,7 @@ export default function Hero({}: Props) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="w-full self-center align-center z-20 pl-10 pr-32"
+        className="w-full text-center lg:text-left self-center  z-20 pl-10 pr-10 lg:pr-32"
       >
         <div className="space-y-5 z-20 text-white">
           <div>
@@ -156,7 +156,7 @@ export default function Hero({}: Props) {
             </p>
           )}
 
-          <div className="flex flex-row space-x-10 tracking-tighter">
+          <div className="flex flex-row space-x-10 tracking-tighter justify-center lg:justify-normal">
             <p
               className={sectionId === 0 ? "underline underline-offset-8" : ""}
             >
