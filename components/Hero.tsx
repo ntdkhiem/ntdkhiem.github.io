@@ -2,6 +2,7 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
 type Props = {};
 
@@ -24,7 +25,8 @@ const Sections = [
     image: "/pic.jpg",
     imageHeight: "h-[400px]",
     imageWidth: "w-[600px]",
-    imageCaption: "Group photo after we won the quarterfinals. Credits: @larissa.zhu on Instagram",
+    imageCaption:
+      "Intramural group photo after we won the quarterfinals. Credits: @larissa.zhu on Instagram",
     fontColor: "white",
     subtitle: "Favorite thing to do in my free time?",
     title: "Soccer!",
@@ -36,7 +38,8 @@ const Sections = [
     image: "/pic2.jpg",
     imageHeight: "h-[400px]",
     imageWidth: "w-[600px]",
-    imageCaption: "Me hard at work before the open ceremony. Credits: @larissa.zhu on Instagram",
+    imageCaption:
+      "Me hard at work before the open ceremony. Credits: @larissa.zhu on Instagram",
     fontColor: "white",
     subtitle: "I live to help others.",
     title: "I'm a mentor/oragnizer!",
@@ -68,7 +71,15 @@ export default function Hero({}: Props) {
     delaySpeed: 1500,
   });
 
-  const handleClick = () => {
+  const handlePrevClick = () => {
+    if (sectionId === 0) {
+      setSectionId(Sections.length - 1);
+    } else {
+      setSectionId(sectionId - 1);
+    }
+  };
+
+  const handleNextClick = () => {
     if (sectionId === Sections.length - 1) {
       setSectionId(0);
     } else {
@@ -77,7 +88,7 @@ export default function Hero({}: Props) {
   };
 
   return (
-    <div className={`h-screen relative flex flex-row space-x-10 bg-stone-800`}>
+    <div className={`h-screen relative flex flex-row bg-stone-800`}>
       {/* background */}
       <motion.img
         key={Sections[sectionId].backgroundImage}
@@ -104,16 +115,22 @@ export default function Hero({}: Props) {
           src={Sections[sectionId].image}
           alt="image"
         />
-        <p className="text-white tracking-tight text-end text-sm">
+        <motion.p
+          key={Sections[sectionId].imageCaption}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="text-white tracking-tight text-end text-sm"
+        >
           {Sections[sectionId].imageCaption}
-        </p>
+        </motion.p>
       </div>
       <motion.div
         key={Sections[sectionId].title}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="w-full self-center align-center z-20 pr-20"
+        className="w-full self-center align-center z-20 pl-10 pr-32"
       >
         <div className="space-y-5 z-20 text-white">
           <div>
@@ -136,14 +153,44 @@ export default function Hero({}: Props) {
           )}
 
           <div className="flex flex-row space-x-10 tracking-tighter">
-            <p className={ sectionId === 0 ? "underline underline-offset-8" : ""}>Welcome</p>
-            <p className={ sectionId === 1 ? "underline underline-offset-8" : ""}>Soccer</p>
-            <p className={ sectionId === 2 ? "underline underline-offset-8" : ""}>Hackathons</p>
-            <p className={ sectionId === 3 ? "underline underline-offset-8" : ""}>Photography</p>
+            <p
+              className={sectionId === 0 ? "underline underline-offset-8" : ""}
+            >
+              Welcome
+            </p>
+            <p
+              className={sectionId === 1 ? "underline underline-offset-8" : ""}
+            >
+              Soccer
+            </p>
+            <p
+              className={sectionId === 2 ? "underline underline-offset-8" : ""}
+            >
+              Hackathons
+            </p>
+            <p
+              className={sectionId === 3 ? "underline underline-offset-8" : ""}
+            >
+              Photography
+            </p>
           </div>
-          <button onClick={handleClick}>Next</button>
         </div>
       </motion.div>
+      {/* <div className="absolute w-full flex flex-row justify-between bg-slate-500 z-30 px-10"> */}
+      <button
+        className="absolute h-full px-10 z-30 scale-50 hover:scale-100 transition duration-300 ease-in-out"
+        onClick={handlePrevClick}
+      >
+        <ChevronLeftIcon className="h-12 w-12 text-white" />
+      </button>
+      <button
+        className="absolute h-full right-0 px-10 z-30 scale-50 hover:scale-100 transition duration-300 ease-in-out"
+        onClick={handleNextClick}
+      >
+        <ChevronRightIcon className="h-12 w-12 text-white" />
+      </button>
+      {/* <button onClick={handleClick}>Next</button> */}
+      {/* </div> */}
     </div>
   );
 }
