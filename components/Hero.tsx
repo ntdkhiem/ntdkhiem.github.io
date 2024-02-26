@@ -2,7 +2,11 @@
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import {
+  ChevronDownIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "@heroicons/react/24/solid";
 
 type Props = {};
 
@@ -43,7 +47,7 @@ const Sections = [
     fontColor: "white",
     subtitle: "I live to help others.",
     title: "I'm a mentor/oragnizer!",
-    body: "I've been an organizer for HackUMass for the past 3 years. I've also been a mentor for the past 2 years. I love helping others and seeing them grow. I've learned so much from the community and I'm grateful for the experiences.",
+    body: "I've been an organizer at HackUMass for the past 3 years. I've also been a mentor for the past 2 years. I love helping others and seeing them grow. I've learned so much from the community and I'm grateful for the experiences.",
   },
   {
     backgroundImage: "/back3.jpg",
@@ -189,8 +193,21 @@ export default function Hero({}: Props) {
       >
         <ChevronRightIcon className="h-12 w-12 text-white" />
       </button>
-      {/* <button onClick={handleClick}>Next</button> */}
-      {/* </div> */}
+      <motion.div
+        animate={{
+          y: [0, -5, 0, 0],
+        }}
+        transition={{
+          repeat: Infinity,
+          repeatDelay: 1,
+          duration: 5,
+          ease: "easeInOut",
+        }}
+        className="absolute bottom-0 w-full"
+      >
+        <p className="text-sm text-white text-center tracking-tight">Scroll to learn about my experiences</p>
+        <ChevronDownIcon className="h-6 w-6 text-white mx-auto" />
+      </motion.div>
     </div>
   );
 }
