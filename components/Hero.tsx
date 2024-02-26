@@ -12,7 +12,7 @@ type Props = {};
 
 const Sections = [
   {
-    backgroundImage: "/background1.jpg",
+    backgroundImage: "/background1.JPG",
     backgroundOverlay: "bg-slate-900",
     image: "/pic1.jpg",
     imageHeight: "h-[400px]",
@@ -24,9 +24,9 @@ const Sections = [
     body: "",
   },
   {
-    backgroundImage: "/background.jpg",
+    backgroundImage: "/background.JPG",
     backgroundOverlay: "bg-green-800",
-    image: "/pic.jpg",
+    image: "/pic.JPG",
     imageHeight: "h-[400px]",
     imageWidth: "w-[600px]",
     imageCaption:
@@ -50,7 +50,7 @@ const Sections = [
     body: "I've been an organizer at HackUMass for the past 3 years. I've also been a mentor for the past 2 years. I love helping others and seeing them grow. I've learned so much from the community and I'm grateful for the experiences.",
   },
   {
-    backgroundImage: "/back3.jpg",
+    backgroundImage: "/back3.JPG",
     backgroundOverlay: "bg-yellow-900",
     image: "/dog.jpg",
     imageHeight: "h-[500px]",
