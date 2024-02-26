@@ -31,7 +31,7 @@ const Sections = [
     fontColor: "white",
   },
 {
-    backgroundImage: "/back3(1).jpg",
+    backgroundImage: "/back3.jpg",
     backgroundOverlay: "bg-yellow-900",
     image: "/dog.jpg",
     imageHeight: "h-[500px]",
@@ -77,7 +77,7 @@ export default function Hero({}: Props) {
       {/* actual section */}
       <motion.img
         key={section.image}
-        initial={{ x: -10, opacity: 0 }}
+        initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1}}
         transition={{
           x: { type: "spring", stiffness: 100 },
