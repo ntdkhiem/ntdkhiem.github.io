@@ -24,11 +24,11 @@ const Sections = [
     image: "/pic.jpg",
     imageHeight: "h-[400px]",
     imageWidth: "w-[600px]",
-    imageCaption: "Credits: @larissa.zhu on Instagram",
+    imageCaption: "Group photo after we won the quarterfinals. Credits: @larissa.zhu on Instagram",
     fontColor: "white",
     subtitle: "Favorite thing to do in my free time?",
     title: "Soccer!",
-    body: "I've been playing soccer since I was 5 years old. I've played for my high school and club teams. I love the sport and the community it brings.",
+    body: "I've been playing soccer since I was 5 years old. I've played for my high school and intramural teams. I love the sport and the community it brings.",
   },
   {
     backgroundImage: "/background2.jpg",
@@ -36,11 +36,11 @@ const Sections = [
     image: "/pic2.jpg",
     imageHeight: "h-[400px]",
     imageWidth: "w-[600px]",
-    imageCaption: "Credits: @larissa.zhu on Instagram",
+    imageCaption: "Me hard at work before the open ceremony. Credits: @larissa.zhu on Instagram",
     fontColor: "white",
     subtitle: "I live to help others.",
-    title: "I'm a mentor!",
-    body: "I've been a mentor for the past 3 years. I've helped students with their academics, college applications, and personal growth. I love helping others and seeing them succeed.",
+    title: "I'm a mentor/oragnizer!",
+    body: "I've been an organizer for HackUMass for the past 3 years. I've also been a mentor for the past 2 years. I love helping others and seeing them grow. I've learned so much from the community and I'm grateful for the experiences.",
   },
   {
     backgroundImage: "/back3.jpg",
@@ -59,7 +59,11 @@ const Sections = [
 export default function Hero({}: Props) {
   const [sectionId, setSectionId] = React.useState(0);
   const [text, count] = useTypewriter({
-    words: ["I'm a student", "I'm a soccer player", "I'm an aspiring Software Engineer"],
+    words: [
+      "I'm a student",
+      "I'm a soccer player",
+      "I'm an aspiring Software Engineer",
+    ],
     loop: true,
     delaySpeed: 1500,
   });
@@ -78,7 +82,7 @@ export default function Hero({}: Props) {
       <motion.img
         key={Sections[sectionId].backgroundImage}
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.5 }}
+        animate={{ opacity: 0.4 }}
         transition={{ duration: 1.5 }}
         className="absolute h-full w-full object-cover"
         src={Sections[sectionId].backgroundImage}
@@ -94,7 +98,7 @@ export default function Hero({}: Props) {
           transition={{
             x: { type: "spring", stiffness: 100 },
             opacity: { duration: 0.2 },
-            duration: 1,
+            duration: 0.5,
           }}
           className={`relative ${Sections[sectionId].imageHeight} ${Sections[sectionId].imageWidth} object-cover rounded-md ml-auto`}
           src={Sections[sectionId].image}
@@ -104,7 +108,13 @@ export default function Hero({}: Props) {
           {Sections[sectionId].imageCaption}
         </p>
       </div>
-      <div className="w-full self-center align-center z-20 pr-10">
+      <motion.div
+        key={Sections[sectionId].title}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="w-full self-center align-center z-20 pr-20"
+      >
         <div className="space-y-5 z-20 text-white">
           <div>
             <h3 className="text-base tracking-tighter leading-3">
@@ -120,17 +130,20 @@ export default function Hero({}: Props) {
               <Cursor />
             </h1>
           ) : (
-            <p className="text-sm lg:text-lg tracking-tight">{Sections[sectionId].body}</p>
+            <p className="text-sm lg:text-lg tracking-tight">
+              {Sections[sectionId].body}
+            </p>
           )}
-          <div className="flex flex-row space-x-10 mt-auto tracking-tighter">
-            <p className="underline underline-offset-8">Welcome</p>
-            <p>Soccer</p>
-            <p>Hackathons</p>
-            <p>Photography</p>
+
+          <div className="flex flex-row space-x-10 tracking-tighter">
+            <p className={ sectionId === 0 ? "underline underline-offset-8" : ""}>Welcome</p>
+            <p className={ sectionId === 1 ? "underline underline-offset-8" : ""}>Soccer</p>
+            <p className={ sectionId === 2 ? "underline underline-offset-8" : ""}>Hackathons</p>
+            <p className={ sectionId === 3 ? "underline underline-offset-8" : ""}>Photography</p>
           </div>
           <button onClick={handleClick}>Next</button>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
