@@ -13,7 +13,7 @@ const Sections = [
     image: "/pic1.jpg",
     imageHeight: "h-[400px]",
     imageWidth: "w-[400px]",
-    imageCaption: "",
+    imageCaption: "Click the right arrow to learn more about me!",
     fontColor: "white",
     subtitle: "Welcome to my portfolio",
     title: "I'm Khiem Nguyen!",
