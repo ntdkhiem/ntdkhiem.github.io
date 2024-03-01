@@ -18,7 +18,7 @@ export default function MassEnergize({}: Props) {
         <p className="text-base text-tighter leading-3">
           Software Engineer Intern
         </p>
-        <h1 className="text-2xl font-bold tracking-tight">@MassEnergize</h1>
+        <h1 className="text-2xl font-bold tracking-tight">&commat;MassEnergize</h1>
       </div>
 
       <section className="snap-center">
@@ -62,7 +62,7 @@ export default function MassEnergize({}: Props) {
                 climate actions. Following the agile methodology kept things
                 organized and allowed us to adapt as needed. The highlight? The
                 app is now in use by over 50 communities in Massachusetts,
-                making the collective effort feel pretty rewarding. It's
+                making the collective effort feel pretty rewarding. It&apos;s
                 satisfying to see something we worked on actually making a
                 difference in the real world.
               </p>
@@ -107,7 +107,7 @@ export default function MassEnergize({}: Props) {
                 database models, and outlines the request/response formats for
                 backend, web, and mobile applications. This proactive approach
                 not only facilitated a quicker onboarding for new team members
-                but also ensured a clear understanding of our system's
+                but also ensured a clear understanding of our system&apos;s
                 intricacies, promoting smoother collaboration and development
                 across the board.
               </p>
