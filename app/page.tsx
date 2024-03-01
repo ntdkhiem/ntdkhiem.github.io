@@ -20,7 +20,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="text-tighter leading-3"
           >
-            Let's talk about my
+            Let&apos;s talk about my
           </motion.p>
           <motion.h1
             initial={{ y: 50, opacity: 0 }}
@@ -45,7 +45,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="text-tighter leading-3"
           >
-            Now, let's talk about my
+            Now, let&apos;s talk about my
           </motion.p>
           <motion.h1
             initial={{ y: 50, opacity: 0 }}
