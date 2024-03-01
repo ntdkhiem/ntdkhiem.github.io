@@ -34,7 +34,7 @@ export default function MassEnergize({}: Props) {
               }}
               viewport={{ once: true }}
               src="/me-figma-design.png"
-              className="relative h-[300px] w-[600px] object-cover rounded-md justify-self-end"
+              className="relative h-[300px] w-[600px] object-fit rounded-md justify-self-end"
             />
             <motion.div
               initial={{ x: 50, opacity: 0 }}
@@ -129,7 +129,7 @@ export default function MassEnergize({}: Props) {
               }}
               viewport={{ once: true }}
               src="/me-api-documentation.png"
-              className="relative h-[300px] w-[600px] object-cover rounded-md"
+              className="relative h-[300px] w-[600px] object-fit rounded-md"
             />
           </div>
         </div>
