@@ -18,7 +18,7 @@ export default function MassEnergize({}: Props) {
         <p className="text-base text-tighter leading-3">
           Software Engineer Intern
         </p>
-        <h1 className="text-2xl font-bold tracking-tight">&commat;MassEnergize</h1>
+        <h1 className="text-2xl font-bold tracking-tight">@MassEnergize</h1>
       </div>
 
       <section className="snap-center">
