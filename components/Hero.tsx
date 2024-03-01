@@ -59,7 +59,7 @@ const Sections = [
     fontColor: "white",
     subtitle: "Best thing I'm dabbling in:",
     title: "Photography!",
-    body: "I've been taking photos for the past year. I love capturing moments and creating memories. I've been experimenting with different styles and techniques.",
+    body: "I've been taking photos for the past year. I love capturing moments and creating memories. I've been experimenting with different styles and techniques. Check out my other IG account: @ntdk03",
   },
 ];
 
@@ -68,6 +68,8 @@ export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: [
       "I'm a student",
+      "I'm a mentor",
+      "I'm an entrepreneur",
       "I'm a soccer player",
       "I'm an aspiring Software Engineer",
     ],
@@ -156,7 +158,7 @@ export default function Hero({}: Props) {
             </p>
           )}
 
-          <div className="flex flex-row space-x-10 tracking-tighter justify-center lg:justify-normal">
+          <div className="flex flex-row space-x-10 tracking-tighter text-base justify-center lg:justify-normal">
             <p
               className={sectionId === 0 ? "underline underline-offset-8" : ""}
             >
