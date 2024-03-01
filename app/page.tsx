@@ -15,13 +15,14 @@ export default function Home() {
           <h1 className="text-6xl font-bold tracking-[10px]">EXPERIENCES</h1>
         </div>
       </section>
-      <section className="snap-center">
+      <section className="snap-start">
         <MassEnergize />
       </section>
       <section className="snap-center">
         <div className="h-screen flex flex-col justify-center items-center text-white">
           <p className="text-tighter leading-3">Now, let's talk about my</p>
           <h1 className="text-6xl font-bold tracking-[10px]">PROJECTS</h1>
+          <h1 className="text-6xl font-bold tracking-[10px] text-red-500">WORK IN PROGRESS</h1>
         </div>
         </section>
     </div>

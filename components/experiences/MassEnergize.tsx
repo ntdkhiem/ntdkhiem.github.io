@@ -1,9 +1,13 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 import { PythonOriginal } from "devicons-react";
 import { ReactOriginal } from "devicons-react";
 import { PostmanOriginal } from "devicons-react";
 import { FirebaseOriginal } from "devicons-react";
 import { FigmaOriginal } from "devicons-react";
+import { DjangoPlain } from "devicons-react";
+import { PostgresqlOriginal } from 'devicons-react';
 
 type Props = {};
 
@@ -17,14 +21,32 @@ export default function MassEnergize({}: Props) {
         <h1 className="text-2xl font-bold tracking-tight">@MassEnergize</h1>
       </div>
 
-      <section className="snap-start">
+      <section className="snap-center">
         <div className="h-screen flex flex-col justify-center items-center">
           <div className="grid grid-cols-2 gap-10">
-            <img
+            <motion.img
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                x: { type: "spring", stiffness: 100 },
+                opacity: { duration: 0.2 },
+                duration: 0.5,
+              }}
+              viewport={{ once: true }}
               src="/me-figma-design.png"
               className="relative h-[300px] w-[600px] object-cover rounded-md justify-self-end"
             />
-            <div className="max-w-xl">
+            <motion.div
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                x: { type: "spring", stiffness: 100 },
+                opacity: { duration: 0.2 },
+                duration: 0.5,
+              }}
+              viewport={{ once: true }}
+              className="max-w-xl"
+            >
               <h1 className="text-2xl font-bold">Mobile Application</h1>
               <div className="grid grid-cols-6 max-w-sm py-2">
                 <PythonOriginal size={50} />
@@ -51,18 +73,31 @@ export default function MassEnergize({}: Props) {
               >
                 Check it out!
               </a>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      <section className="snap-center">
+      <section className="snap-end">
         <div className="h-screen flex flex-col justify-center items-center ">
           <div className="grid grid-cols-2 gap-10">
-            <div className="max-w-xl justify-self-end text-left">
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                x: { type: "spring", stiffness: 100 },
+                opacity: { duration: 0.2 },
+                duration: 0.5,
+              }}
+              viewport={{ once: true }}
+              className="max-w-xl justify-self-end"
+            >
               <h1 className="text-2xl font-bold">API Documentation</h1>
               <div className="grid grid-cols-6 max-w-sm py-2">
                 <ReactOriginal size={50} />
+                <DjangoPlain size={50} />
+                <FirebaseOriginal size={50} />
+                <PostgresqlOriginal size={50} />
               </div>
               <p className="text-sm lg:text-lg tracking-tight mb-5">
                 I took the initiative to speed up the onboarding process by 80%,
@@ -83,8 +118,16 @@ export default function MassEnergize({}: Props) {
               >
                 Check it out!
               </a>
-            </div>
-            <img
+            </motion.div>
+            <motion.img
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                x: { type: "spring", stiffness: 100 },
+                opacity: { duration: 0.2 },
+                duration: 0.5,
+              }}
+              viewport={{ once: true }}
               src="/me-api-documentation.png"
               className="relative h-[300px] w-[600px] object-cover rounded-md"
             />
