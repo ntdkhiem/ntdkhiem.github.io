@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MassEnergize from "@/components/experiences/MassEnergize";
@@ -11,8 +13,24 @@ export default function Home() {
       </section>
       <section className="snap-center">
         <div className="h-screen flex flex-col justify-center items-center text-white">
-          <p className="text-tighter leading-3">Let's talk about my</p>
-          <h1 className="text-6xl font-bold tracking-[10px]">EXPERIENCES</h1>
+          <motion.p
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-tighter leading-3"
+          >
+            Let's talk about my
+          </motion.p>
+          <motion.h1
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="text-6xl font-bold tracking-[10px]"
+          >
+            EXPERIENCES
+          </motion.h1>
         </div>
       </section>
       <section className="snap-start">
@@ -20,11 +38,35 @@ export default function Home() {
       </section>
       <section className="snap-center">
         <div className="h-screen flex flex-col justify-center items-center text-white">
-          <p className="text-tighter leading-3">Now, let's talk about my</p>
-          <h1 className="text-6xl font-bold tracking-[10px]">PROJECTS</h1>
-          <h1 className="text-6xl font-bold tracking-[10px] text-red-500">WORK IN PROGRESS</h1>
+          <motion.p
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-tighter leading-3"
+          >
+            Now, let's talk about my
+          </motion.p>
+          <motion.h1
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="text-6xl font-bold tracking-[10px]"
+          >
+            PROJECTS
+          </motion.h1>
+          <motion.h1
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 1, duration: 0.5 }}
+            className="text-6xl font-bold tracking-[10px] text-red-500"
+          >
+            WORK IN PROGRESS
+          </motion.h1>
         </div>
-        </section>
+      </section>
     </div>
   );
 }
