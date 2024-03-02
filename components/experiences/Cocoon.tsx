@@ -15,7 +15,7 @@ export default function Cocoon({}: Props) {
         <p className="text-base text-tighter leading-3">
           Co-Founder/Lead Programmer
         </p>
-        <h1 className="text-2xl font-bold tracking-tight">@Cocoon</h1>
+        <h1 className="text-2xl font-bold tracking-tight">@Cocoon <span className="text-base font-normal">(Prev. Awkward)</span></h1>
         <p className="text-base text-tighter">
           July 2023 - PRESENT | Amherst, MA
         </p>
