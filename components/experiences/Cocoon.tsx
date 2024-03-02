@@ -15,7 +15,9 @@ export default function Cocoon({}: Props) {
         <p className="text-base text-tighter leading-3">
           Co-Founder/Lead Programmer
         </p>
-        <h1 className="text-2xl font-bold tracking-tight">@Cocoon <span className="text-base font-normal">(Prev. Awkward)</span></h1>
+        <h1 className="text-2xl font-bold tracking-tight">
+          @Cocoon <span className="text-base font-normal">(Prev. Awkward)</span>
+        </h1>
         <p className="text-base text-tighter">
           July 2023 - PRESENT | Amherst, MA
         </p>
@@ -74,16 +76,18 @@ export default function Cocoon({}: Props) {
       <section className="snap-center">
         <div className="h-screen flex flex-col justify-center items-center">
           <div className="grid grid-cols-5 gap-10">
-            <div className="col-span-3 justify-self-end">
-              <motion.img
-                initial={{ x: -50, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{
-                  x: { type: "spring", stiffness: 100 },
-                  opacity: { duration: 0.2 },
-                  duration: 0.5,
-                }}
-                viewport={{ once: true }}
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{
+                x: { type: "spring", stiffness: 100 },
+                opacity: { duration: 0.2 },
+                duration: 0.5,
+              }}
+              viewport={{ once: true }}
+              className="col-span-3 justify-self-end"
+            >
+              <img
                 src="/cocoon-award2.jpg"
                 className="relative h-[400px] w-[600px] object-fit rounded-md"
               />
@@ -96,7 +100,7 @@ export default function Cocoon({}: Props) {
                 feedbacks from teenagers and young adults with the launch of the
                 app&apos;s MVP!
               </p>
-            </div>
+            </motion.div>
             <motion.img
               initial={{ x: 50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
