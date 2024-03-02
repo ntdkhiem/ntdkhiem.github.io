@@ -13,12 +13,15 @@ type Props = {};
 
 export default function MassEnergize({}: Props) {
   return (
-    <div className="relative text-white py-20 snap-y snap-mandatory">
-      <div className="absolute top-0 my-20 w-full text-center">
+    <div className="relative text-white snap-y snap-mandatory">
+      <div className="absolute top-0 my-10 w-full text-center">
         <p className="text-base text-tighter leading-3">
           Software Engineer Intern
         </p>
         <h1 className="text-2xl font-bold tracking-tight">@MassEnergize</h1>
+        <p className="text-base text-tighter">
+          June 2023 - September 2023 | Concord, MA
+        </p>
       </div>
 
       <section className="snap-center">
