@@ -92,7 +92,7 @@ export default function Cocoon({}: Props) {
                 participation in startup pitching competitions!
               </p>
               <p className="max-w-[600px] text-sm lg:text-lg tracking-tight mb-5">
-                During our initial stage, we've garnered over 50 positive
+                During our initial stage, we&apos;ve garnered over 50 positive
                 feedbacks from teenagers and young adults with the launch of the
                 app&apos;s MVP!
               </p>
