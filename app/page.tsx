@@ -71,6 +71,20 @@ export default function Home() {
           </motion.h1>
         </div>
       </section>
+      <section className="snap-end">
+        <footer className="p-4 text-center">
+          <span className="text-sm text-white">
+            © 2024{" "}
+            <a
+              href="https://flowbite.com"
+              className="hover:underline"
+              target="_blank"
+            >
+              Khiem Nguyen
+            </a>
+          </span>
+        </footer>
+      </section>
     </div>
   );
 }
