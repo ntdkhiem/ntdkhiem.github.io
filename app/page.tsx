@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MassEnergize from "@/components/experiences/MassEnergize";
+import Cocoon from "@/components/experiences/Cocoon";
 
 export default function Home() {
   return (
@@ -32,6 +33,9 @@ export default function Home() {
             EXPERIENCES
           </motion.h1>
         </div>
+      </section>
+      <section className="snap-start">
+        <Cocoon />
       </section>
       <section className="snap-start">
         <MassEnergize />
