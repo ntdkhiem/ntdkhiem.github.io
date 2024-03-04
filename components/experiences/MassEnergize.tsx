@@ -14,19 +14,19 @@ type Props = {};
 export default function MassEnergize({}: Props) {
   return (
     <div className="relative text-white snap-y snap-mandatory">
-      <div className="absolute top-0 my-10 w-full text-center">
-        <p className="text-base text-tighter leading-3">
+      <div className="absolute top-0 my-20 md:my-10 w-full text-center">
+        <p className="text-sm 2xl:text-base text-tighter leading-3">
           Software Engineer Intern
         </p>
-        <h1 className="text-2xl font-bold tracking-tight">@MassEnergize</h1>
-        <p className="text-base text-tighter">
+        <h1 className="text-lg 2xl:text-2xl font-bold tracking-tight">@MassEnergize</h1>
+        <p className="text-sm 2xl:text-base text-tighter">
           June 2023 - September 2023 | Concord, MA
         </p>
       </div>
 
       <section className="snap-center">
         <div className="h-screen flex flex-col justify-center items-center">
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <motion.img
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -37,7 +37,7 @@ export default function MassEnergize({}: Props) {
               }}
               viewport={{ once: true }}
               src="/me-figma-design.png"
-              className="relative h-[300px] w-[600px] object-fit rounded-md justify-self-end"
+              className="relative h-[150px] w-[200px] lg:h-[300px] lg:w-[600px] object-fit rounded-md justify-self-end hidden lg:block"
             />
             <motion.div
               initial={{ x: 50, opacity: 0 }}
@@ -48,9 +48,9 @@ export default function MassEnergize({}: Props) {
                 duration: 0.5,
               }}
               viewport={{ once: true }}
-              className="max-w-xl"
+              className="max-w-sm md:max-w-lg xl:max-w-xl"
             >
-              <h1 className="text-2xl font-bold">Mobile Application</h1>
+              <h1 className="text-xl lg:text-2xl font-bold">Mobile Application</h1>
               <div className="grid grid-cols-6 max-w-sm py-2">
                 <PythonOriginal size={50} />
                 <ReactOriginal size={50} />
@@ -58,7 +58,7 @@ export default function MassEnergize({}: Props) {
                 <FirebaseOriginal size={50} />
                 <FigmaOriginal size={50} />
               </div>
-              <p className="text-sm lg:text-lg tracking-tight mb-5">
+              <p className="text-sm xl:text-lg tracking-tight mb-5">
                 Working with a team of three, we designed and built a mobile app
                 using a straightforward approach. Our goal was simple: create a
                 cross-platform application to track carbon footprints and log
@@ -83,7 +83,7 @@ export default function MassEnergize({}: Props) {
 
       <section className="snap-end">
         <div className="h-screen flex flex-col justify-center items-center ">
-          <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <motion.div
               initial={{ x: -50, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
@@ -93,16 +93,16 @@ export default function MassEnergize({}: Props) {
                 duration: 0.5,
               }}
               viewport={{ once: true }}
-              className="max-w-xl justify-self-end"
+              className="max-w-sm md:max-w-lg xl:max-w-xl"
             >
-              <h1 className="text-2xl font-bold">API Documentation</h1>
+              <h1 className="text-xl lg:text-2xl font-bold">API Documentation</h1>
               <div className="grid grid-cols-6 max-w-sm py-2">
                 <ReactOriginal size={50} />
                 <DjangoPlain size={50} />
                 <FirebaseOriginal size={50} />
                 <PostgresqlOriginal size={50} />
               </div>
-              <p className="text-sm lg:text-lg tracking-tight mb-5">
+              <p className="text-sm xl:text-lg tracking-tight mb-5">
                 I took the initiative to speed up the onboarding process by 80%,
                 opting to engage in pair programming sessions with a senior
                 developer. Together, we efficiently built comprehensive API
@@ -132,7 +132,7 @@ export default function MassEnergize({}: Props) {
               }}
               viewport={{ once: true }}
               src="/me-api-documentation.png"
-              className="relative h-[300px] w-[600px] object-fit rounded-md"
+              className="relative h-[300px] w-[600px] object-fit rounded-md hidden lg:block"
             />
           </div>
         </div>

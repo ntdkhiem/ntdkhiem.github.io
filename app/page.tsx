@@ -28,7 +28,7 @@ export default function Home() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 0.5 }}
-            className="text-6xl font-bold tracking-[10px]"
+            className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-[10px]"
           >
             EXPERIENCES
           </motion.h1>
@@ -56,7 +56,7 @@ export default function Home() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 0.5 }}
-            className="text-6xl font-bold tracking-[10px]"
+            className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-[10px]"
           >
             PROJECTS
           </motion.h1>
@@ -65,7 +65,7 @@ export default function Home() {
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 1, duration: 0.5 }}
-            className="text-6xl font-bold tracking-[10px] text-red-500"
+            className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-[10px] text-red-500"
           >
             WORK IN PROGRESS
           </motion.h1>
