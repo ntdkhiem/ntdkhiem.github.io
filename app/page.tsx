@@ -8,8 +8,10 @@ import Cocoon from "@/components/experiences/Cocoon";
 export default function Home() {
   return (
     <div className="h-screen overflow-x-hidden overflow-y-scroll snap-y snap-mandatory z-0">
-      <Header />
-      <section id="hero" className="snap-start">
+      <section id="hero" className="relative snap-start">
+        <div className="absolute w-full h-full">
+          <Header />
+        </div>
         <Hero />
       </section>
       <section className="snap-center">
