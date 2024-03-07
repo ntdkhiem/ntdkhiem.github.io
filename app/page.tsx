@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import MassEnergize from "@/components/experiences/MassEnergize";
 import Cocoon from "@/components/experiences/Cocoon";
+import Hackathons from "@/components/experiences/Hackathons";
 
 export default function Home() {
   return (
@@ -41,6 +42,9 @@ export default function Home() {
       </section>
       <section className="snap-start">
         <MassEnergize />
+      </section>
+      <section className="snap-center">
+        <Hackathons />
       </section>
       <section className="snap-center">
         <div className="h-screen flex flex-col justify-center items-center text-white">
