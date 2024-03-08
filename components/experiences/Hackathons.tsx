@@ -11,7 +11,6 @@ const EVENTS = [
       "After being a participant for many hackathons in high school and winning a few, I decided to take the next step and become an organizer for HackUMass X !",
     ],
     dateColors: [
-      "bg-yellow-500",
       "bg-yellow-50",
       "text-yellow-800",
       "text-yellow-300",
@@ -26,7 +25,6 @@ const EVENTS = [
       "I was the first to resolve more than 15 issues for both the frontend and backend in just 2 weeks into the project!",
     ],
     dateColors: [
-      "bg-yellow-500",
       "bg-yellow-50",
       "text-yellow-800",
       "text-yellow-300",
@@ -42,7 +40,6 @@ const EVENTS = [
       "Many were so grateful for my help that they asked for a photo with me!",
     ],
     dateColors: [
-      "bg-yellow-500",
       "bg-yellow-50",
       "text-yellow-800",
       "text-yellow-300",
@@ -55,7 +52,7 @@ const EVENTS = [
     content: [
       "After the success of HackUMass X and many positive feedback from participants, I decided to volunteer as a lead mentor for Hack(H)er413 2023 to help provide guidance and support to pro-women, pro-LGBTQ+ hackers.",
     ],
-    dateColors: ["bg-pink-500", "bg-pink-50", "text-pink-800", "text-pink-300"],
+    dateColors: ["bg-pink-50", "text-pink-800", "text-pink-300"],
   },
   {
     title: "Director of Technology of HackUMass XI",
@@ -66,7 +63,6 @@ const EVENTS = [
       "Along with leading the technology team, I had a wonderful opportunity to work with multiple teams to help coordinate the event!",
     ],
     dateColors: [
-      "bg-indigo-500",
       "bg-indigo-50",
       "text-indigo-800",
       "text-indigo-300",
@@ -80,7 +76,6 @@ const EVENTS = [
       "Under my leadership, the team was able to successfully resolve more than 30 issues and implemented 10 new features creating a smooth experience for the participants to register and submit their projects.",
     ],
     dateColors: [
-      "bg-indigo-500",
       "bg-indigo-50",
       "text-indigo-800",
       "text-indigo-300",
@@ -97,7 +92,6 @@ const EVENTS = [
       "Confident in my ReactJS skills, I registered to lead a workshop on &quot;Introduction to ReactJS&quot; for more than 800 participants and it was a success!",
     ],
     dateColors: [
-      "bg-indigo-500",
       "bg-indigo-50",
       "text-indigo-800",
       "text-indigo-300",
@@ -110,7 +104,7 @@ const EVENTS = [
     content: [
       "In my role as Co-Director of Technology, I dedicated my utmost effort to facilitating the event coordination and offering guidance to the participants.",
     ],
-    dateColors: ["bg-cyan-500", "bg-cyan-50", "text-cyan-800", "text-cyan-300"],
+    dateColors: ["bg-cyan-50", "text-cyan-800", "text-cyan-300"],
   },
   {
     title: "More Hackathons!!",
@@ -119,7 +113,7 @@ const EVENTS = [
     content: [
       "I am looking forward to participating in more hackathons even after my graduation and possibly even start one of my own for underrepresented communities!",
     ],
-    dateColors: ["bg-emerald-500", "bg-emerald-50", "text-emerald-800", "text-emerald-300"],
+    dateColors: ["bg-emerald-50", "text-emerald-800", "text-emerald-300"],
   },
 ];
 
@@ -156,10 +150,10 @@ export default function Hackathons({}: Props) {
             </motion.div>
             {/* <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) --> */}
             <div
-              className={`flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:${event.dateColors[0]} after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5`}
+              className="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-slate-300 after:border-4 after:box-content after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5"
             >
               <time
-                className={`sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 ${event.dateColors[2]} ${event.dateColors[1]} rounded-full`}
+                className={`sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 ${event.dateColors[1]} ${event.dateColors[0]} rounded-full`}
               >
                 {event.date}
               </time>
@@ -172,7 +166,7 @@ export default function Hackathons({}: Props) {
                   duration: 0.5,
                 }}
                 viewport={{ once: true }}
-                className={`text-xl font-bold ${event.dateColors[3]}`}
+                className={`text-xl font-bold ${event.dateColors[2]}`}
               >
                 {event.title}
               </motion.div>
