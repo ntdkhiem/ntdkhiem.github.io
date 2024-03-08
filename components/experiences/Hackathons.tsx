@@ -130,9 +130,6 @@ export default function Hackathons({}: Props) {
     <div className="relative text-white">
       <div className="absolute h-full bg-[url('/hackathon.png')] bg-cover w-full opacity-20 z-0"></div>
       <div className="py-20 md:py-10 w-full text-center">
-        <p className="text-sm 2xl:text-base text-tighter leading-3">
-          Co-Director
-        </p>
         <h1 className="text-lg 2xl:text-2xl font-bold tracking-tight">
           @HackUMass & @Hack(H)er413
         </h1>
