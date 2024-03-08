@@ -202,7 +202,7 @@ export default function Hackathons({}: Props) {
             </li>
             <li>
               Confident in my ReactJS skills, I registered to lead a workshop on
-              "Introduction to ReactJS" for more than 800 participants and it
+              &quot;Introduction to ReactJS&quot; for more than 800 participants and it
               was a success!
             </li>
           </ul>
