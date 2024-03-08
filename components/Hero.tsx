@@ -47,7 +47,7 @@ const Sections = [
     fontColor: "white",
     subtitle: "I live to help others.",
     title: "I'm a mentor/oragnizer!",
-    body: "I've been an organizer at HackUMass for the past 3 years. I've also been a mentor for the past 2 years. I love helping others and seeing them grow. I've learned so much from the community and I'm grateful for the experiences. Check out their website: https://hackumass.com/",
+    body: "I've been an organizer and a mentor at HackUMass and Hack(H)er413 for the past 2 years. I love helping others and seeing them grow. I've learned so much from the community and I'm so grateful for the experiences. Check out their website: https://hackumass.com/",
   },
   {
     backgroundImage: "/back3.JPG",
