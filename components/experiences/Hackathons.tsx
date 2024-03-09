@@ -131,7 +131,7 @@ export default function Hackathons({}: Props) {
           June 2022 - PRESENT | Amherst, MA
         </p>
       </div>
-      <div className="px-20">
+      <div className="mx-10 lg:mx-40">
         {EVENTS.map((event, index) => (
           <div key={index} className="relative pl-8 sm:pl-32 pb-52 group">
             {/* <!-- Purple label --> */}

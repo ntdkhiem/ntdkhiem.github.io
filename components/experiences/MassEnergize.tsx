@@ -13,7 +13,7 @@ type Props = {};
 
 export default function MassEnergize({}: Props) {
   return (
-    <div className="relative text-white snap-y snap-mandatory">
+    <div className="relative text-white snap-y snap-mandatory mx-10 lg:mx-40">
       <div className="absolute top-0 my-20 md:my-10 w-full text-center">
         <p className="text-sm 2xl:text-base text-tighter leading-3">
           Software Engineer Intern
@@ -37,7 +37,7 @@ export default function MassEnergize({}: Props) {
               }}
               viewport={{ once: true }}
               src="/me-figma-design.png"
-              className="relative h-[150px] w-[200px] lg:h-[300px] lg:w-[600px] object-fit rounded-md justify-self-end hidden lg:block"
+              className="relative h-[150px] w-[200px] lg:h-[300px] lg:w-[600px] object-cover rounded-md hidden lg:block"
             />
             <motion.div
               initial={{ x: 50, opacity: 0 }}
@@ -81,8 +81,8 @@ export default function MassEnergize({}: Props) {
         </div>
       </section>
 
-      <section className="snap-end">
-        <div className="h-screen flex flex-col justify-center items-center ">
+      <section className="snap-start">
+        <div className="h-screen flex flex-col justify-center items-center">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <motion.div
               initial={{ x: -50, opacity: 0 }}
@@ -132,7 +132,7 @@ export default function MassEnergize({}: Props) {
               }}
               viewport={{ once: true }}
               src="/me-api-documentation.png"
-              className="relative h-[300px] w-[600px] object-fit rounded-md hidden lg:block"
+              className="relative h-[300px] w-[600px] object-cover rounded-md hidden lg:block"
             />
           </div>
         </div>
