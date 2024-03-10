@@ -24,6 +24,19 @@ const Sections = [
     body: "",
   },
   {
+    backgroundImage: "/background-career.jpg",
+    backgroundOverlay: "bg-green-800",
+    image: "/career.jpg",
+    imageHeight: "h-[500px]",
+    imageWidth: "w-[450px]",
+    imageCaption:
+      "On my way back to my apartment after a long day of classes.",
+    fontColor: "white",
+    subtitle: "Hello world!",
+    title: "My career/education?",
+    body: "I'm a first-generation college student at UMass Amherst, majoring in Computer Science and Math. My key strengths are an inquisitive mindset that allows me to learn quickly, along with strong communication skills and the ability to collaborate effectively in teams. Right now, I'm searching for a summer internship in Software Engineering or Cloud Engineering.",
+  },
+  {
     backgroundImage: "/background.JPG",
     backgroundOverlay: "bg-green-800",
     image: "/pic.JPG",
@@ -57,7 +70,7 @@ const Sections = [
     imageWidth: "w-[350px]",
     imageCaption: '"Cutie Patootie Poodle"',
     fontColor: "white",
-    subtitle: "Best thing I'm dabbling in:",
+    subtitle: "Best thing I'm dabbling in,",
     title: "Photography!",
     body: "I've been taking photos for the past year. I love capturing moments and creating memories. I've been experimenting with different styles and techniques. Check out my other IG account: @ntdk03",
   },
@@ -65,16 +78,18 @@ const Sections = [
 
 export default function Hero({}: Props) {
   const [sectionId, setSectionId] = React.useState(0);
-  const [text, count] = useTypewriter({
+  const [text, _] = useTypewriter({
     words: [
-      "I'm a student",
-      "I'm a mentor",
-      "I'm an entrepreneur",
-      "I'm a soccer player",
-      "I'm an aspiring Software Engineer",
+      "I'm a first-generation college student.",
+      "I'm a proud immigrant.",
+      "I'm a mentor.",
+      "I'm an entrepreneur.",
+      "I'm an aspiring Software Engineer.",
     ],
     loop: true,
-    delaySpeed: 1500,
+    delaySpeed: 2000,
+    typeSpeed: 10,
+    deleteSpeed: 10,
   });
 
   const handlePrevClick = () => {
@@ -167,15 +182,20 @@ export default function Hero({}: Props) {
             <p
               className={sectionId === 1 ? "underline underline-offset-8" : ""}
             >
-              Soccer
+              Career/Education
             </p>
             <p
               className={sectionId === 2 ? "underline underline-offset-8" : ""}
             >
-              Hackathons
+              Soccer
             </p>
             <p
               className={sectionId === 3 ? "underline underline-offset-8" : ""}
+            >
+              Hackathons
+            </p>
+            <p
+              className={sectionId === 4 ? "underline underline-offset-8" : ""}
             >
               Photography
             </p>
