@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Header from "../components/Header.tsx";
-import Hero from "../components/Hero.tsx";
-import Hackathons from "../components/experiences/Hackathons.tsx";
-import Experiences from "../components/experiences.tsx";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Hackathons from "../components/experiences/Hackathons";
+import Experiences from "../components/Experiences";
 export default function Home() {
     return (
         <div className="h-screen overflow-x-hidden overflow-y-scroll z-0">

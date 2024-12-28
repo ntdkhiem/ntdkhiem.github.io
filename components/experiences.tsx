@@ -42,17 +42,21 @@ const EXPERIENCES = [
     },
 ];
 interface JobProp {
+    id: number;
     title: string;
     company: string;
     company_logo: string;
     date: string;
-    description: [];
+    description: string[];
 }
-function CardSection({ jobs }) {
+interface JobsProps {
+    jobs: JobProp[];
+}
+function CardSection({ jobs }: JobsProps) {
     return (
         <div className="flex animate-linear">
             {jobs.map((job: JobProp) => (
-                <div className="w-96 flex-shrink-0 ml-5">
+                <div key={job.id} className="w-96 flex-shrink-0 ml-5">
                     <img
                         src={job.company_logo}
                         className="w-full h-48 object-fit"
@@ -61,8 +65,10 @@ function CardSection({ jobs }) {
                     <h1 className="font-bold">{job.company}</h1>
                     <h1 className="font-light">{job.date}</h1>
                     <ul className="list-disc list-inside">
-                        {job.description.map((text: string) => (
-                            <li className="leading-tight pt-3">{text}</li>
+                        {job.description.map((text: string, index: number) => (
+                            <li key={index} className="leading-tight pt-3">
+                                {text}
+                            </li>
                         ))}
                     </ul>
                 </div>
