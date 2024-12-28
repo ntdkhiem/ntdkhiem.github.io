@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 const EXPERIENCES = [
     {
         id: 1,
@@ -72,15 +72,13 @@ function CardSection({ jobs }) {
 }
 export default function Experiences() {
     return (
-        <div className="relative text-white snap-y snap-mandatory mx-10 lg:mx-40">
-            <section className="snap-center">
-                <div className="min-h-screen max-w-full overflow-hidden">
-                    <div className="flex gap-5">
-                        <CardSection jobs={EXPERIENCES} />
-                        <CardSection jobs={EXPERIENCES} />
-                    </div>
+        <div className="relative text-white mx-10 lg:mx-40">
+            <div className="min-h-screen max-w-full overflow-hidden">
+                <div className="flex gap-5">
+                    <CardSection jobs={EXPERIENCES} />
+                    <CardSection jobs={EXPERIENCES} />
                 </div>
-            </section>
+            </div>
         </div>
     );
 }
