@@ -50,12 +50,12 @@ interface JobProp {
 }
 function CardSection({ jobs }) {
     return (
-        <div className="flex gap-5 animate-linear mt-10">
+        <div className="flex animate-linear">
             {jobs.map((job: JobProp) => (
-                <div className="w-96 flex-shrink-0">
+                <div className="w-96 flex-shrink-0 ml-5">
                     <img
                         src={job.company_logo}
-                        className="w-full h-48 object-fill"
+                        className="w-full h-48 object-fit"
                     />
                     <h1 className="tracking-tight text-xl">{job.title}</h1>
                     <h1 className="font-bold">{job.company}</h1>
@@ -73,8 +73,8 @@ function CardSection({ jobs }) {
 export default function Experiences() {
     return (
         <div className="relative text-white mx-10 lg:mx-40">
-            <div className="min-h-screen max-w-full overflow-hidden">
-                <div className="flex gap-5">
+            <div className="min-h-screen w-full overflow-hidden">
+                <div className="flex">
                     <CardSection jobs={EXPERIENCES} />
                     <CardSection jobs={EXPERIENCES} />
                 </div>

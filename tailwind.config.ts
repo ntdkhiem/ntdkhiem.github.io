@@ -15,7 +15,7 @@ const config: Config = {
             animation: {
                 "ping-slow": "ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite",
                 "bounce-horiz": "bounce-horiz 1s infinite",
-                "linear": "scroll-horiz 30s linear infinite",
+                "linear": "swipe 30s linear infinite",
             },
             keyframes: {
                 "bounce-horiz": {
@@ -30,9 +30,9 @@ const config: Config = {
                             "cubic-bezier(0, 0, 0.2, 1)",
                     },
                 },
-                "scroll-horiz": {
+                "swipe": {
                     "0%": {
-                        "transform": "translateX(0%)",
+                        "transform": "translateX(0)",
                     },
                     "100%": {
                         "transform": "translateX(-100%)",
