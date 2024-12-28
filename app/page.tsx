@@ -1,11 +1,9 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import MassEnergize from "@/components/experiences/MassEnergize";
-import Cocoon from "@/components/experiences/Cocoon";
-import Hackathons from "@/components/experiences/Hackathons";
+import Header from "../components/Header.tsx";
+import Hero from "../components/Hero.tsx";
+import Hackathons from "../components/experiences/Hackathons.tsx";
 import Experiences from "../components/experiences.tsx";
 export default function Home() {
     return (
