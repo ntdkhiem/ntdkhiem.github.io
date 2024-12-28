@@ -13,7 +13,7 @@ export default function Cocoon({}: Props) {
     <div className="relative text-white snap-y snap-mandatory mx-10 lg:mx-40">
       <div className="absolute top-0 my-20 lg:my-10 w-full text-center">
         <p className="text-sm 2xl:text-base text-tighter leading-3">
-          Co-Founder/Lead Programmer
+          Co-Founder
         </p>
         <h1 className="text-lg 2xl:text-2xl font-bold tracking-tight">
           @Cocoon <span className="text-base font-normal">(Prev. Awkward)</span>
