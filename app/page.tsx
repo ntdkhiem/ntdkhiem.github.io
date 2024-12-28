@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Hackathons from "@/components/Hackathons";
-import Experiences from "@/components/Experiences";
 export default function Home() {
     return (
         <div className="h-screen overflow-x-hidden overflow-y-scroll z-0">
@@ -34,7 +33,6 @@ export default function Home() {
                     EXPERIENCES
                 </motion.h1>
             </div>
-            <Experiences />
             <Hackathons />
             <div className="h-screen flex flex-col justify-center items-center text-white">
                 <motion.p
