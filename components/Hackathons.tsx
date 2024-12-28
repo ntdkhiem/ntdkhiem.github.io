@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import Button from "../Button.tsx";
+import Button from "./Button";
 const EVENTS = [
     {
         title: "An Organizer of HackUMass X",
