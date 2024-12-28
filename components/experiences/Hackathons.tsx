@@ -132,7 +132,7 @@ export default function Hackathons() {
                     @HackUMass & @Hack(H)er413
                 </h1>
                 <p className="text-sm 2xl:text-base text-tighter">
-                    June 2022 - PRESENT | Amherst, MA
+                    June 2022 - December 2024 | Amherst, MA
                 </p>
             </div>
             <div
