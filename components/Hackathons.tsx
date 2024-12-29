@@ -89,7 +89,7 @@ const EVENTS = [
             "When the mentorship system failed to work, I took the initiative to become the light house for all of issues and questions from the participants.",
             "Before the system was fixed, I resolved around 60% of the issues related to ReactJS, Flask, and Firebase.",
             "Many were able to submit their projects on time and one even won the Best Security Hack!",
-            "Confident in my ReactJS skills, I registered to lead a workshop on &quot;Introduction to ReactJS&quot; for more than 800 participants and it was a success!",
+            "Confident in my ReactJS skills, I registered to lead a workshop on 'Introduction to ReactJS' for more than 800 participants and it was a success!",
         ],
         dateColors: [
             "bg-indigo-50",
@@ -98,11 +98,11 @@ const EVENTS = [
         ],
     },
     {
-        title: "Co-Director of Technology",
-        subtitle: "Hack(H)er413 2024",
+        title: "Co-Director",
+        subtitle: "HackUMass XII",
         date: "Dec, 2024",
         content: [
-            "In my role as Co-Director of Technology, I dedicated my utmost effort to facilitating the event coordination and offering guidance to the participants.",
+            "This year, HackUMass was very lucky to host over 800 participants across New England! As the Co-Director, I helped serve as one of the main contact for many volunteers, mentors, and judges. I also worked with the CS Dean and faculty to expand the hackathon's reach across all majors, creating a more inclusive experience.",
         ],
         dateColors: ["bg-cyan-50", "text-cyan-800", "text-cyan-300"],
     },
