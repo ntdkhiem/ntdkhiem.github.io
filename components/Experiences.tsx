@@ -20,7 +20,6 @@ const EXPERIENCES = [
             "Jenkins",
             "CloudWatch",
         ],
-        images: [],
     },
     {
         id: 2,
@@ -37,7 +36,6 @@ const EXPERIENCES = [
           "Pandas",
           "Matplotlib",
         ],
-        images: [],
     },
     {
         id: 3,
@@ -49,7 +47,13 @@ const EXPERIENCES = [
             "Secured $3,000 in grant funding from startup pitching competitions.",
             "Led end-to-end system design, architecture decisions, and iterative prototyping across frontend, and backend",
         ],
-        images: [],
+        technologies: [
+          "React",
+          "Flask",
+          "PostgreSQL",
+          "AI/ML",
+          "Full-Stack Development",
+        ],
     },
     {
         id: 4,
@@ -65,8 +69,9 @@ const EXPERIENCES = [
           "Python",
           "Numpy",
           "Pandas",
+          "Scikit-learn",
+          "Agile",
         ],
-        images: [],
     },
 ];
 interface JobProp {

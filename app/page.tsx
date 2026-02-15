@@ -55,15 +55,6 @@ export default function Home() {
                 >
                     PROJECTS
                 </motion.h1>
-                <motion.h1
-                    initial={{ y: 50, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 1, duration: 0.5 }}
-                    className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-[10px] text-red-500"
-                >
-                    WORK IN PROGRESS
-                </motion.h1>
             </div>
             <footer className="p-4 text-center">
                 <span className="text-sm text-white">
