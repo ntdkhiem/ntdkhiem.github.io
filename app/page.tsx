@@ -14,26 +14,26 @@ export default function Home() {
                 </div>
                 <Hero />
             </section>
-            <div className="h-screen flex flex-col justify-center items-center text-white">
-                <motion.p
-                    initial={{ y: 50, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
-                    className="text-tighter leading-3"
-                >
-                    Let&apos;s talk about my
-                </motion.p>
-                <motion.h1
-                    initial={{ y: 50, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.5, duration: 0.5 }}
-                    className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-[10px]"
-                >
-                    EXPERIENCES
-                </motion.h1>
-            </div>
+            {/* <div className="h-screen flex flex-col justify-center items-center text-white"> */}
+            {/*     <motion.p */}
+            {/*         initial={{ y: 50, opacity: 0 }} */}
+            {/*         whileInView={{ y: 0, opacity: 1 }} */}
+            {/*         viewport={{ once: true }} */}
+            {/*         transition={{ duration: 0.5 }} */}
+            {/*         className="text-tighter leading-3" */}
+            {/*     > */}
+            {/*         Let&apos;s talk about my */}
+            {/*     </motion.p> */}
+            {/*     <motion.h1 */}
+            {/*         initial={{ y: 50, opacity: 0 }} */}
+            {/*         whileInView={{ y: 0, opacity: 1 }} */}
+            {/*         viewport={{ once: true }} */}
+            {/*         transition={{ delay: 0.5, duration: 0.5 }} */}
+            {/*         className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-[10px]" */}
+            {/*     > */}
+            {/*         EXPERIENCES */}
+            {/*     </motion.h1> */}
+            {/* </div> */}
             <Experiences />
             <Hackathons />
             <div className="h-screen flex flex-col justify-center items-center text-white">
