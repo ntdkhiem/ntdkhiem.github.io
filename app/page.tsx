@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Hackathons from "@/components/Hackathons";
 import Experiences from "@/components/Experiences";
+import Projects from "@/components/Projects";
 export default function Home() {
     return (
         <div className="h-screen overflow-x-hidden overflow-y-scroll z-0">
@@ -14,26 +15,26 @@ export default function Home() {
                 </div>
                 <Hero />
             </section>
-            {/* <div className="h-screen flex flex-col justify-center items-center text-white"> */}
-            {/*     <motion.p */}
-            {/*         initial={{ y: 50, opacity: 0 }} */}
-            {/*         whileInView={{ y: 0, opacity: 1 }} */}
-            {/*         viewport={{ once: true }} */}
-            {/*         transition={{ duration: 0.5 }} */}
-            {/*         className="text-tighter leading-3" */}
-            {/*     > */}
-            {/*         Let&apos;s talk about my */}
-            {/*     </motion.p> */}
-            {/*     <motion.h1 */}
-            {/*         initial={{ y: 50, opacity: 0 }} */}
-            {/*         whileInView={{ y: 0, opacity: 1 }} */}
-            {/*         viewport={{ once: true }} */}
-            {/*         transition={{ delay: 0.5, duration: 0.5 }} */}
-            {/*         className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-[10px]" */}
-            {/*     > */}
-            {/*         EXPERIENCES */}
-            {/*     </motion.h1> */}
-            {/* </div> */}
+            <div className="h-screen flex flex-col justify-center items-center text-white">
+                <motion.p
+                    initial={{ y: 50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className="text-tighter leading-3"
+                >
+                    Let&apos;s talk about my
+                </motion.p>
+                <motion.h1
+                    initial={{ y: 50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.5, duration: 0.5 }}
+                    className="text-2xl md:text-4xl lg:text-6xl font-bold tracking-[10px]"
+                >
+                    EXPERIENCES
+                </motion.h1>
+            </div>
             <Experiences />
             <Hackathons />
             <div className="h-screen flex flex-col justify-center items-center text-white">
@@ -56,6 +57,7 @@ export default function Home() {
                     PROJECTS
                 </motion.h1>
             </div>
+            <Projects />
             <footer className="p-4 text-center">
                 <span className="text-sm text-white">
                     © 2024{" "}
