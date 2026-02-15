@@ -12,8 +12,8 @@ const Sections = [
         backgroundImage: "/background1.JPG",
         backgroundOverlay: "bg-slate-900",
         image: "/pic1.jpg",
-        imageHeight: "h-[400px]",
-        imageWidth: "w-[400px]",
+        imageHeight: "h-[300px]",
+        imageWidth: "w-[300px]",
         imageCaption: "Click the right arrow to learn more about me!",
         fontColor: "white",
         subtitle: "Welcome to my portfolio",
@@ -24,8 +24,8 @@ const Sections = [
         backgroundImage: "/background-career.jpg",
         backgroundOverlay: "bg-green-800",
         image: "/career.jpg",
-        imageHeight: "h-[500px]",
-        imageWidth: "w-[450px]",
+        imageHeight: "h-[300px]",
+        imageWidth: "w-[350px]",
         imageCaption:
             "On my way back to my apartment after a long day of classes.",
         fontColor: "white",
@@ -38,8 +38,8 @@ const Sections = [
         backgroundImage: "/background.JPG",
         backgroundOverlay: "bg-green-800",
         image: "/pic.JPG",
-        imageHeight: "h-[400px]",
-        imageWidth: "w-[600px]",
+        imageHeight: "h-[300px]",
+        imageWidth: "w-[400px]",
         imageCaption:
             "Intramural group photo after we won the quarterfinals. Credits: @larissa.zhu on Instagram",
         fontColor: "white",
@@ -52,8 +52,8 @@ const Sections = [
         backgroundImage: "/background2.jpg",
         backgroundOverlay: "bg-slate-900",
         image: "/pic2.jpg",
-        imageHeight: "h-[400px]",
-        imageWidth: "w-[600px]",
+        imageHeight: "h-[300px]",
+        imageWidth: "w-[400px]",
         imageCaption:
             "Me hard at work before the HackUMA XI's opening ceremony. Credits: @larissa.zhu on Instagram",
         fontColor: "white",
@@ -66,7 +66,7 @@ const Sections = [
         backgroundImage: "/back3.JPG",
         backgroundOverlay: "bg-yellow-900",
         image: "/dog.jpg",
-        imageHeight: "h-[500px]",
+        imageHeight: "h-[350px]",
         imageWidth: "w-[350px]",
         imageCaption: '"Cutie Patootie Poodle"',
         fontColor: "white",
@@ -105,7 +105,7 @@ export default function Hero({}: Props) {
                 alt="background"
             />
             {/* actual section */}
-            <div className="w-full self-center z-20 hidden lg:block">
+            <div className="w-full self-center z-20 hidden xl:block mx-8">
                 <motion.img
                     key={Sections[sectionId].image}
                     initial={{ x: -50, opacity: 0 }}
@@ -136,7 +136,7 @@ export default function Hero({}: Props) {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
-                className="w-full text-center lg:text-left self-center  z-20 pl-10 pr-10 lg:pr-32"
+                className="w-full text-center xl:text-left self-center  z-20 pl-10 pr-10 lg:pr-32"
             >
                 <div className="space-y-5 z-20 text-white">
                     <div>
@@ -150,7 +150,7 @@ export default function Hero({}: Props) {
                     <p className="text-sm lg:text-lg tracking-tight">
                         {Sections[sectionId].body}
                     </p>
-                    <div className="flex flex-row space-x-10 tracking-tighter text-base justify-center lg:justify-normal">
+                    <div className="flex flex-row space-x-10 tracking-tighter text-base justify-center xl:justify-normal">
                         <p
                             className={sectionId === 0
                                 ? "underline underline-offset-8"
