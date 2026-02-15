@@ -13,6 +13,13 @@ const EXPERIENCES = [
             "Automated enterprise Jenkins controller creation using Config-as-Code, reduced creation time from 2 days to 15 mins",
             "Deployed monitoring and alerting system using AWS CloudWatch with custom metrics for proactive incident resolution",
         ],
+        technologies: [
+            "AWS",
+            "Kubernetes",
+            "Terraform",
+            "Jenkins",
+            "CloudWatch",
+        ],
         images: [],
     },
     {
@@ -23,6 +30,12 @@ const EXPERIENCES = [
         description: [
             "Developed automating real-time detection and analysis of PFAS in water in Python, saved team 3 hours per running",
             "Solution processes time-series sensor data, applies data techniques to ensure accuracy, reliability in monitoring outcome",
+        ],
+        technologies: [
+          "Python",
+          "Numpy",
+          "Pandas",
+          "Matplotlib",
         ],
         images: [],
     },
@@ -48,6 +61,11 @@ const EXPERIENCES = [
             "Utilized Levenshtein distance algorithm, and statistical modeling on 10+ data points for energy consumption analysis",
             "Participated in peer-programming and weekly code review, learned Agile and best practices in software development",
         ],
+        technologies: [
+          "Python",
+          "Numpy",
+          "Pandas",
+        ],
         images: [],
     },
 ];
@@ -57,6 +75,7 @@ interface JobProp {
     company: string;
     date: string;
     description: string[];
+    technologies: string[];
 }
 export default function Experiences() {
     return (
@@ -76,6 +95,13 @@ export default function Experiences() {
                                     </li>
                                 ))}
                             </ul>
+                            <div className="flex flex-wrap gap-2 mt-4">
+                                {job.technologies?.map((tech: string, index: number) => (
+                                    <span key={index} className="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">
+                                        {tech}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 ))}
