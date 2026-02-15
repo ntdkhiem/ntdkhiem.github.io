@@ -3,40 +3,50 @@ import React from "react";
 const EXPERIENCES = [
     {
         id: 1,
-        title: "Mobile Engineering Intern",
-        company: "Solomon Consulting Group, LLC",
-        date: "May 2024 - Aug 2024",
-        company_logo: "/solomon.jpg",
+        title: "DevOps Software Engineer",
+        company: "Solid State Scientific Corporation",
+        date: "Mar 2025 - Present",
         description: [
-            "Enabled households to access $100,000+ in savings through energy efficiency incentives and rebates by creating an online home energy assessment tool using data analytics and an advanced fuzzy keyword matching algorithm.",
-            "Connected 500+ low-income households with 100+ minority-owned renewable energy businesses for energy-efficient home upgrades in Massachusetts, Georgia, and North Carolina by developing iOS- and Android-compatible mobile app using React Native.",
-            "Crafted wire-frames for the platform leveraging Figma and findings from user research to improve user engagement and satisfaction.",
+            "Created build pipeline in Powershell for C++ distributed radar signal processing, saved team hours of compiling",
+            "Designed and deployed 3 multi-zones, low-latency data ingestion pipelines, using Red Hat Enterprise Linux",
+            "Deployed an internal knowledge base for 20+ engineers to AWS Elastic Kubernetes Service using Terraform and Helm",
+            "Automated enterprise Jenkins controller creation using Config-as-Code, reduced creation time from 2 days to 15 mins",
+            "Deployed monitoring and alerting system using AWS CloudWatch with custom metrics for proactive incident resolution",
         ],
         images: [],
     },
     {
         id: 2,
-        title: "Co-Founder",
-        company: "Cocoon",
-        date: "Jul 2021 - May 2024",
-        company_logo: "/cocoon.jpg",
+        title: "Software Engineer",
+        company: "2Witech Solutions",
+        date: "Jan 2025 - Mar 2025",
         description: [
-            "Co-founded a social platform connecting socially-awkward individuals with personalized AI coaching for social skills improvement.",
-            "Took on leading role in developing a full-stack application that is highly available and could scale to support 300+ active users.",
-            "Attained 96.33% test coverage and 80% increase in development speed by implementing robust CI/CD pipeline and following test-driven development best practices.",
+            "Developed automating real-time detection and analysis of PFAS in water in Python, saved team 3 hours per running",
+            "Solution processes time-series sensor data, applies data techniques to ensure accuracy, reliability in monitoring outcome",
         ],
         images: [],
     },
     {
         id: 3,
-        title: "Software Engineering Intern",
-        company: "MassEnergize",
-        date: "Jun 2023 - Sep 2023",
-        company_logo: "massenergize.jpg",
+        title: "Co-Founder",
+        company: "Cocoon",
+        date: "Jul 2021 - Jan 2025",
         description: [
-            "Improved accessibility and boosted community participation in climate actions by building the mobile version of the web-based dashboard application, compatible for both iOS and Android users.",
-            "Reduced on-boarding time for future engineers by 75% by collaborating with the back-end team to create a comprehensive API documentation, detailing over 200 API endpoints, data models, system architectures.",
-            "Resolved 10+ high-priority tickets in the back-end system, gaining proficiency in RESTful API development, and SDLC.",
+            "Delivered a social platform connecting social-anxious community for confidence-building journey with AI coaching",
+            "Secured $3,000 in grant funding from startup pitching competitions.",
+            "Led end-to-end system design, architecture decisions, and iterative prototyping across frontend, and backend",
+        ],
+        images: [],
+    },
+    {
+        id: 4,
+        title: "Software Engineer Intern",
+        company: "Solomon Consulting Group",
+        date: "May 2024 - Aug 2024",
+        description: [
+            "Built home energy analytics engine in Python, personalized recommendations from pool of $100k+ energy incentives",
+            "Utilized Levenshtein distance algorithm, and statistical modeling on 10+ data points for energy consumption analysis",
+            "Participated in peer-programming and weekly code review, learned Agile and best practices in software development",
         ],
         images: [],
     },
@@ -45,7 +55,6 @@ interface JobProp {
     id: number;
     title: string;
     company: string;
-    company_logo: string;
     date: string;
     description: string[];
 }
@@ -56,11 +65,6 @@ export default function Experiences() {
             <div className="flex flex-col gap-12">
                 {EXPERIENCES.map((job: JobProp) => (
                     <div key={job.id} className="flex flex-col md:flex-row items-start md:space-x-8">
-                        <img
-                            src={job.company_logo}
-                            alt={`${job.company} logo`}
-                            className="w-24 h-24 object-cover rounded-full flex-shrink-0 mb-4 md:mb-0"
-                        />
                         <div>
                             <h3 className="text-xl font-semibold">{job.title}</h3>
                             <p className="font-bold text-lg">{job.company}</p>
