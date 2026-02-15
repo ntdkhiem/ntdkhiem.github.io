@@ -21,16 +21,16 @@ export default function Header() {
                 className="flex flex-row items-center gap-5"
             >
                 <a href="https://www.instagram.com/ntdkhiem" target="_blank">
-                    <img src="/ig.svg" width="24" height="24" />
+                    <img src="/ig.svg" width="36" height="36" />
                 </a>
                 <a
                     href="https://www.linkedin.com/in/ntd-khiem/"
                     target="_blank"
                 >
-                    <img src="/linkedin.svg" width="24" height="24" />
+                    <img src="/linkedin.svg" width="36" height="36" />
                 </a>
                 <a href="https://github.com/ntdkhiem" target="_blank">
-                    <img src="/github.svg" width="24" height="24" />
+                    <img src="/github.svg" width="36" height="36" />
                 </a>
             </motion.div>
             <motion.div
