@@ -49,41 +49,32 @@ interface JobProp {
     date: string;
     description: string[];
 }
-interface JobsProps {
-    jobs: JobProp[];
-}
-function CardSection({ jobs }: JobsProps) {
-    return (
-        <div className="flex animate-linear">
-            {jobs.map((job: JobProp) => (
-                <div key={job.id} className="w-96 flex-shrink-0 ml-5">
-                    <img
-                        src={job.company_logo}
-                        className="w-full h-48 object-fit"
-                    />
-                    <h1 className="tracking-tight text-xl">{job.title}</h1>
-                    <h1 className="font-bold">{job.company}</h1>
-                    <h1 className="font-light">{job.date}</h1>
-                    <ul className="list-disc list-inside">
-                        {job.description.map((text: string, index: number) => (
-                            <li key={index} className="leading-tight pt-3">
-                                {text}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            ))}
-        </div>
-    );
-}
 export default function Experiences() {
     return (
-        <div className="relative text-white mx-10 lg:mx-40">
-            <div className="min-h-screen w-full overflow-hidden">
-                <div className="flex">
-                    <CardSection jobs={EXPERIENCES} />
-                    <CardSection jobs={EXPERIENCES} />
-                </div>
+        <div className="relative text-white mx-10 lg:mx-40 py-8">
+            <h2 className="text-3xl font-bold mb-8">Experience</h2>
+            <div className="flex flex-col gap-12">
+                {EXPERIENCES.map((job: JobProp) => (
+                    <div key={job.id} className="flex flex-col md:flex-row items-start md:space-x-8">
+                        <img
+                            src={job.company_logo}
+                            alt={`${job.company} logo`}
+                            className="w-24 h-24 object-cover rounded-full flex-shrink-0 mb-4 md:mb-0"
+                        />
+                        <div>
+                            <h3 className="text-xl font-semibold">{job.title}</h3>
+                            <p className="font-bold text-lg">{job.company}</p>
+                            <p className="font-light text-sm text-gray-400 mb-4">{job.date}</p>
+                            <ul className="list-disc list-inside space-y-2">
+                                {job.description.map((text: string, index: number) => (
+                                    <li key={index} className="leading-relaxed">
+                                        {text}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                ))}
             </div>
         </div>
     );
