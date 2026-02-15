@@ -1,6 +1,6 @@
-"use client";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface ProjectProp {
     id: number;
@@ -46,39 +46,73 @@ const PROJECTS: ProjectProp[] = [
     },
 ];
 
+const TechColorMap: { [key: string]: { bg: string; text: string } } = {
+    "AWS": { bg: "bg-orange-500", text: "text-gray-300" },
+    "Kubernetes": { bg: "bg-blue-500", text: "text-gray-300" },
+    "Terraform": { bg: "bg-purple-500", text: "text-gray-300" },
+    "Jenkins": { bg: "bg-yellow-500", text: "text-gray-900" },
+    "CloudWatch": { bg: "bg-teal-500", text: "text-gray-300" },
+    "Python": { bg: "bg-blue-600", text: "text-gray-300" },
+    "Numpy": { bg: "bg-indigo-500", text: "text-gray-300" },
+    "Pandas": { bg: "bg-red-500", text: "text-gray-300" },
+    "Matplotlib": { bg: "bg-green-600", text: "text-gray-300" },
+    "React": { bg: "bg-cyan-500", text: "text-gray-900" },
+    "Flask": { bg: "bg-gray-600", text: "text-gray-300" },
+    "PostgreSQL": { bg: "bg-indigo-700", text: "text-gray-300" },
+    "AI/ML": { bg: "bg-fuchsia-600", text: "text-gray-300" },
+    "Full-Stack Development": { bg: "bg-emerald-600", text: "text-gray-300" },
+    "Scikit-learn": { bg: "bg-orange-700", text: "text-gray-300" },
+    "Agile": { bg: "bg-violet-500", text: "text-gray-300" },
+    "Cryptography": { bg: "bg-stone-500", text: "text-gray-300" },
+    "Go": { bg: "bg-cyan-600", text: "text-gray-300" },
+    "Google Pub/Sub": { bg: "bg-red-700", text: "text-gray-300" },
+    "Google Kubernetes": { bg: "bg-blue-700", text: "text-gray-300" },
+    "Google Operations Suite": { bg: "bg-lime-700", text: "text-gray-300" },
+    "GitHub Actions": { bg: "bg-purple-700", text: "text-gray-300" },
+    "WebSocket": { bg: "bg-gray-500", text: "text-gray-300" },
+    "Redis": { bg: "bg-red-700", text: "text-gray-300" },
+    "NGINX": { bg: "bg-green-700", text: "text-gray-300" },
+    "Selenium": { bg: "bg-emerald-600", text: "text-gray-300" },
+};
+
 export default function Projects() {
     return (
         <div className="relative text-white mx-10 lg:mx-40 py-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {PROJECTS.map((project: ProjectProp) => (
-                    <div key={project.id} className="bg-gray-800 p-6 rounded-lg shadow-md">
+                    <motion.div
+                        key={project.id}
+                        className="bg-gray-700 p-6 rounded-lg shadow-md"
+                        whileHover={{ scale: 1.05, y: -5 }}
+                        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    >
                         <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                         <p className="text-sm text-gray-300 mb-4">{project.description}</p>
                         <div className="flex flex-wrap gap-2 mb-4">
                             {project.technologies.map((tech: string, index: number) => (
-                                <span key={index} className="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">
+                                <span key={index} className={`${TechColorMap[tech]?.bg || "bg-gray-700"} ${TechColorMap[tech]?.text || "text-gray-300"} text-xs font-medium px-2.5 py-1 rounded-full`}>
                                     {tech}
                                 </span>
                             ))}
                         </div>
                         <div className="flex gap-4">
                             {project.github_link && (
-                                <a href={`https://${project.github_link}`} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                                <a href={`https://${project.github_link}`} target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">
                                     GitHub
                                 </a>
                             )}
                             {project.youtube_link && (
-                                <a href={`${project.youtube_link}`} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                                <a href={`${project.youtube_link}`} target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">
                                     Youtube
                                 </a>
                             )}
                             {project.live_link && (
-                                <a href={`https://${project.live_link}`} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+                                <a href={`https://${project.live_link}`} target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">
                                     Live Demo
                                 </a>
                             )}
                         </div>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </div>

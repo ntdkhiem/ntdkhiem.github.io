@@ -82,6 +82,27 @@ interface JobProp {
     description: string[];
     technologies: string[];
 }
+
+const TechColorMap: { [key: string]: { bg: string; text: string } } = {
+    "AWS": { bg: "bg-orange-500", text: "text-gray-300" },
+    "Kubernetes": { bg: "bg-blue-500", text: "text-gray-300" },
+    "Terraform": { bg: "bg-purple-500", text: "text-gray-300" },
+    "Jenkins": { bg: "bg-yellow-500", text: "text-gray-900" },
+    "CloudWatch": { bg: "bg-teal-500", text: "text-gray-300" },
+    "Python": { bg: "bg-blue-600", text: "text-gray-300" },
+    "Numpy": { bg: "bg-indigo-500", text: "text-gray-300" },
+    "Pandas": { bg: "bg-red-500", text: "text-gray-300" },
+    "Matplotlib": { bg: "bg-green-600", text: "text-gray-300" },
+    "React": { bg: "bg-cyan-500", text: "text-gray-900" },
+    "Flask": { bg: "bg-gray-600", text: "text-gray-300" },
+    "PostgreSQL": { bg: "bg-indigo-700", text: "text-gray-300" },
+    "AI/ML": { bg: "bg-fuchsia-600", text: "text-gray-300" },
+    "Full-Stack Development": { bg: "bg-emerald-600", text: "text-gray-300" },
+    "Scikit-learn": { bg: "bg-orange-700", text: "text-gray-300" },
+    "Agile": { bg: "bg-violet-500", text: "text-gray-300" },
+    "Cryptography": { bg: "bg-stone-500", text: "text-gray-300" },
+};
+
 export default function Experiences() {
     return (
         <div className="relative text-white mx-10 lg:mx-40 py-8">
@@ -101,7 +122,7 @@ export default function Experiences() {
                             </ul>
                             <div className="flex flex-wrap gap-2 mt-4">
                                 {job.technologies?.map((tech: string, index: number) => (
-                                    <span key={index} className="bg-gray-700 text-gray-300 text-xs font-medium px-2.5 py-1 rounded-full">
+                                    <span key={index} className={`${TechColorMap[tech]?.bg || "bg-gray-700"} ${TechColorMap[tech]?.text || "text-gray-300"} text-xs font-medium px-2.5 py-1 rounded-full`}>
                                         {tech}
                                     </span>
                                 ))}
