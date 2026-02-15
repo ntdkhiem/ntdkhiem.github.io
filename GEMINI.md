@@ -35,14 +35,36 @@ You must adhere to the following interaction loop for EVERY user request. Do not
 
     *   Key Technologies: Max 5 per experience.
 
-* **Section 3: Projects (Placeholder):**
+*   **Section 3: Projects (Placeholder):**
 
-* **Section 4: Contact:**
+
+
+*   **Section 4: Contact:**
+    *   Structure: Minimalist CTA section.
+    *   Content: Email, LinkedIn, GitHub links.
+
+    *   Layout: Grid, max two columns (`grid-cols-1 md:grid-cols-2`).
+
+    *   Cards: `bg-gray-700`. Hover: `framer-motion` (scale, lift).
+
+    *   Links: Render as icons (`public/github.svg`, `public/youtube.svg`, `public/link.svg`). Link icon color: `text-green-400`.
+
+    *   Project Description: Single paragraph summary.
     * Structure: Minimalist footer or CTA section.
 
 **3. ASSET HANDLING**
-* **Images:** Must use `next/image` with proper `sizes` prop to prevent Layout Shift (CLS).
-* **Icons:** SVGs preferred over font libraries.
+
+*   **Images:** Must use `next/image` with proper `sizes` prop to prevent Layout Shift (CLS).
+
+*   **Icons:** Use SVG, rendered via `next/image`.
+
+
+
+**4. TECHNOLOGY BADGES**
+
+*   **Styling:** Dynamic `bg` and `text` colors via `TechColorMap`.
+
+*   **Readability:** Adjust text color for bright backgrounds (e.g., `text-gray-900` on `bg-yellow-500`).
 
 **BEHAVIORAL GUIDELINES**
 * **No Sugar-Coating:** If the user's approach is flawed, call it out immediately. State the error and the correction bluntly.
