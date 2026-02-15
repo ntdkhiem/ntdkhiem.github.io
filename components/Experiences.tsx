@@ -85,7 +85,6 @@ interface JobProp {
 export default function Experiences() {
     return (
         <div className="relative text-white mx-10 lg:mx-40 py-8">
-            <h2 className="text-3xl font-bold mb-8">Experience</h2>
             <div className="flex flex-col gap-12">
                 {EXPERIENCES.map((job: JobProp) => (
                     <div key={job.id} className="flex flex-col md:flex-row items-start md:space-x-8">
