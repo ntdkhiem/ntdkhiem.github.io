@@ -34,7 +34,7 @@ const PROJECTS: ProjectProp[] = [
         description: "A Python-based command-line application designed to help beginners explore and understand classic cryptography. It implements various ciphers like Affine Cipher, Hill Digraph Cipher, and Vigenère Square, and includes installation instructions and a TODO list for future enhancements.",
         technologies: ["Python", "Cryptography"], // Keeping it concise for technologies
         github_link: "github.com/ntdkhiem/EnciphDeWord",
-        youtube_link: "https://asciinema.org/a/158352?autoplay=1",
+        live_link: "asciinema.org/a/158352?autoplay=1",
     },
     {
         id: 4, // Incrementing from 3
@@ -97,18 +97,18 @@ export default function Projects() {
                         </div>
                         <div className="flex gap-4">
                             {project.github_link && (
-                                <a href={`https://${project.github_link}`} target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">
-                                    GitHub
+                                <a href={`https://${project.github_link}`} target="_blank" rel="noopener noreferrer">
+                                    <Image src="/github.svg" alt="GitHub" width={24} height={24} className="hover:opacity-70" />
                                 </a>
                             )}
                             {project.youtube_link && (
-                                <a href={`${project.youtube_link}`} target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">
-                                    Youtube
+                                <a href={`${project.youtube_link}`} target="_blank" rel="noopener noreferrer">
+                                    <Image src="/youtube.svg" alt="Youtube" width={24} height={24} className="hover:opacity-70" />
                                 </a>
                             )}
                             {project.live_link && (
-                                <a href={`https://${project.live_link}`} target="_blank" rel="noopener noreferrer" className="text-green-400 hover:underline">
-                                    Live Demo
+                                <a href={`https://${project.live_link}`} target="_blank" rel="noopener noreferrer">
+                                  Live Demo
                                 </a>
                             )}
                         </div>
