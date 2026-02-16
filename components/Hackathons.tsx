@@ -119,7 +119,7 @@ const EVENTS = [
 export default function Hackathons() {
     const [isExpanded, setIsExpanded] = useState(false);
     return (
-        <div className="relative text-white">
+        <div className="relative text-espresso-brown">
             <div className="absolute h-full bg-[url('/hackathon.png')] bg-cover w-full opacity-20 z-0">
             </div>
             <div className="absolute bottom-0 w-full text-center z-10">
@@ -178,7 +178,7 @@ export default function Hackathons() {
                                 }}
                                 viewport={{ once: true }}
                                 className={`text-xl font-bold ${
-                                    event.dateColors[2]
+                                    event.dateColors[1]
                                 }`}
                             >
                                 {event.title}

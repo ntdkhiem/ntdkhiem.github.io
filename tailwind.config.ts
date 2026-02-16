@@ -14,7 +14,9 @@ const config: Config = {
             },
             colors: {
                 "espresso-brown": "#3E3227",
-                "oatmeal-light": "#F5F5DC",
+                "oatmeal-light": "#FFF7F0",
+                "oatmeal-dark": "#D1B399",
+                "coffee-white": "#E6E0D4",
                 "accent-sage": "#A2AD9C",
             },
             fontFamily: {
