@@ -54,7 +54,7 @@ export default function Header() {
                 className="flex flex-row items-center text-white-300 cursor-pointer"
             >
                 <a href="mailto:ntdkhiem@gmail.com" target="_blank">
-                    <p className="text-accent-sage">ntdkhiem@gmail.com</p>
+                    <p className="text-oatmeal-light">ntdkhiem@gmail.com</p>
                 </a>
             </motion.div>
         </header>

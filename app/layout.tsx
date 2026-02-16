@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Work_Sans, Lora } from "next/font/google";
 import "./globals.css";
 
-const workSans = Work_Sans({ subsets: ["latin"] })
-const lora = Lora({ weight: "700", subsets: ["latin"] })
+const workSans = Work_Sans({ subsets: ["latin"] });
+const lora = Lora({ weight: "700", subsets: ["latin"], variable: "--font-lora" });
 
 export const metadata: Metadata = {
   title: "Khiem Nguyen's Portfolio",

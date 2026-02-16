@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 :root {
-    --background-color: #D1B399;
+    --background-color: #FFF7F0;
 }
 
 body  {
     background-color: var(--background-color);
 }
+
+p {
+  @apply text-base tracking-tight;
+}
+

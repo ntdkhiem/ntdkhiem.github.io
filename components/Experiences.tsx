@@ -115,7 +115,7 @@ export default function Experiences() {
                             <p className="font-light text-sm mb-4">{job.date}</p>
                             <ul className="list-disc list-inside space-y-2">
                                 {job.description.map((text: string, index: number) => (
-                                    <li key={index} className="leading-relaxed">
+                                    <li key={index} className=" text-base tracking-tight leading-relaxed">
                                         {text}
                                     </li>
                                 ))}
