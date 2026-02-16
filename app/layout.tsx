@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Kanit } from "next/font/google";
+import { Work_Sans, Lora } from "next/font/google";
 import "./globals.css";
 
-const kanit = Kanit({ weight: "400", subsets: ["latin"] })
+const workSans = Work_Sans({ subsets: ["latin"] })
+const lora = Lora({ weight: "700", subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Khiem Nguyen's Portfolio",
@@ -16,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={kanit.className}>{children}</body>
+      <body className={`${workSans.className} text-oatmeal-light`}>{children}</body>
     </html>
   );
 }

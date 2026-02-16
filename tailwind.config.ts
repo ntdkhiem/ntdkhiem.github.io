@@ -12,6 +12,11 @@ const config: Config = {
                 "gradient-conic":
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
             },
+            colors: {
+                "espresso-brown": "#3E3227",
+                "oatmeal-light": "#F5F5DC",
+                "accent-sage": "#A2AD9C",
+            },
             animation: {
                 "ping-slow": "ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite",
                 "bounce-horiz": "bounce-horiz 1s infinite",

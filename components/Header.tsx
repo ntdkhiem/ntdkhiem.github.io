@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+
 export default function Header() {
     return (
-        <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center p-5">
+        <header className="sticky top-0 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center p-5 bg-transparent backdrop-blur-sm">
             <motion.div
                 initial={{
                     x: -500,
@@ -20,19 +22,21 @@ export default function Header() {
                 }}
                 className="flex flex-row items-center gap-5"
             >
-                <a href="https://www.instagram.com/ntdkhiem" target="_blank">
-                    <img src="/ig.svg" width="36" height="36" />
+                <a href="https://www.instagram.com/ntdkhiem" target="_blank" className="text-oatmeal-light">
+                    <Image src="/ig.svg" alt="Instagram Profile" width={36} height={36} />
                 </a>
                 <a
                     href="https://www.linkedin.com/in/ntd-khiem/"
                     target="_blank"
+                    className="text-oatmeal-light"
                 >
-                    <img src="/linkedin.svg" width="36" height="36" />
+                    <Image src="/linkedin.svg" alt="LinkedIn Profile" width={36} height={36} />
                 </a>
-                <a href="https://github.com/ntdkhiem" target="_blank">
-                    <img src="/github.svg" width="36" height="36" />
+                <a href="https://github.com/ntdkhiem" target="_blank" className="text-oatmeal-light">
+                    <Image src="/github.svg" alt="GitHub Profile" width={36} height={36} />
                 </a>
             </motion.div>
+
             <motion.div
                 initial={{
                     x: 500,
@@ -50,7 +54,7 @@ export default function Header() {
                 className="flex flex-row items-center text-white-300 cursor-pointer"
             >
                 <a href="mailto:ntdkhiem@gmail.com" target="_blank">
-                    <p className="text-white">ntdkhiem@gmail.com</p>
+                    <p className="text-accent-sage">ntdkhiem@gmail.com</p>
                 </a>
             </motion.div>
         </header>
