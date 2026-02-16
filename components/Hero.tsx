@@ -140,7 +140,7 @@ export default function Hero({}: Props) {
             >
                 <div className="space-y-5 z-20 text-white">
                     <div>
-                        <h3 className="text-base tracking-tighter leading-3">
+                        <h3 className="text-base tracking-tighter leading-3 font-lora">
                             {Sections[sectionId].subtitle}
                         </h3>
                         <h1 className="text-4xl font-bold tracking-tight">

@@ -17,6 +17,9 @@ const config: Config = {
                 "oatmeal-light": "#F5F5DC",
                 "accent-sage": "#A2AD9C",
             },
+            fontFamily: {
+                lora: ['var(--font-lora)'],
+            },
             boxShadow: {
                 "scandi": "0 10px 30px rgba(0, 0, 0, 0.08)",
             },

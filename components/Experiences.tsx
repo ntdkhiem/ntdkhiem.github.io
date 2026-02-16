@@ -108,11 +108,11 @@ export default function Experiences() {
         <div className="relative text-white mx-10 lg:mx-40 py-8">
             <div className="flex flex-col gap-12">
                 {EXPERIENCES.map((job: JobProp) => (
-                    <div key={job.id} className="flex flex-col md:flex-row items-start md:space-x-8">
+                    <div key={job.id} className="flex flex-col md:flex-row items-start md:space-x-8 text-espresso-brown">
                         <div>
-                            <h3 className="text-xl font-semibold">{job.title}</h3>
-                            <p className="font-bold text-lg">{job.company}</p>
-                            <p className="font-light text-sm text-gray-400 mb-4">{job.date}</p>
+                            <h3 className="text-xl font-bold font-lora">{job.title}</h3>
+                            <p className="font-semibold text-lg">{job.company}</p>
+                            <p className="font-light text-sm mb-4">{job.date}</p>
                             <ul className="list-disc list-inside space-y-2">
                                 {job.description.map((text: string, index: number) => (
                                     <li key={index} className="leading-relaxed">

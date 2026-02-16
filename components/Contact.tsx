@@ -25,7 +25,7 @@ export default function Contact() {
                                     <Image src="/linkedin_espresso.svg" alt="LinkedIn" width={32} height={32} />
                                 </a>
                                 <a href="https://github.com/ntdkhiem" target="_blank" rel="noopener noreferrer">
-                                    <Image src="/github.svg" alt="GitHub" width={32} height={32} />
+                                    <Image src="/github_espresso.svg" alt="GitHub" width={32} height={32} />
                                 </a>
                                 <a href="https://www.youtube.com/@ntdkhiem" target="_blank" rel="noopener noreferrer">
                                     <Image src="/youtube.svg" alt="YouTube" width={32} height={32} />

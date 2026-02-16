@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${workSans.className} text-oatmeal-light`}>{children}</body>
+    <html lang="en" className={lora.variable}>
+      <body className={`${workSans.className} text-espresso-brown`}>{children}</body>
     </html>
   );
 }

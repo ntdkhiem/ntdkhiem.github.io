@@ -74,7 +74,7 @@ export default function Projects() {
                       <div className="flex gap-4">
                           {project.github_link && (
                               <a href={`https://${project.github_link}`} target="_blank" rel="noopener noreferrer" className="text-espresso-brown">
-                                  <Image src="/github.svg" alt="GitHub" width={24} height={24} className="hover:opacity-70 text-espresso-brown" />
+                                  <Image src="/github_espresso.svg" alt="GitHub" width={24} height={24} className="hover:opacity-70 text-espresso-brown" />
                               </a>
                           )}
                           {project.youtube_link && (
@@ -111,7 +111,7 @@ export default function Projects() {
                       <div className="flex gap-4">
                           {project.github_link && (
                               <a href={`https://${project.github_link}`} target="_blank" rel="noopener noreferrer" className="text-espresso-brown">
-                                  <Image src="/github.svg" alt="GitHub" width={24} height={24} className="hover:opacity-70" />
+                                  <Image src="/github_espresso.svg" alt="GitHub" width={24} height={24} className="hover:opacity-70" />
                               </a>
                           )}
                           {project.youtube_link && (
