@@ -63,10 +63,16 @@ You must adhere to the following interaction loop for EVERY user request. Do not
         3.  Tech Stack (Monochromatic badges).
         4.  Links (Row of outline icons in primary text color).
 
-* **Section 4: Contact:**
-    * Structure: Minimalist footer or CTA section.
-    * Content: Email, LinkedIn, GitHub links.
-    * Styling: Clean sans-serif. Links use accent color or primary text color outline icons. Background blends with global texture.
+* **Section 4: Contact (CTA):**
+    * **Structure:** Encapsulated "Scandi-Card". Single centered card containing all elements, set against the textured global background.
+    * **Decorations:** Subtle, organic abstract shapes (e.g., watercolor blobs in muted tones) positioned behind the card to connect it to the environment.
+    * **Content Hierarchy:**
+        1.  Headline (Warm Serif, Primary Text).
+        2.  Subtext (Clean Sans-serif, Primary Text).
+        3.  Primary Action Button ("Email Me").
+        4.  Social Links Row.
+    * **Button Styling (Solid Primary):** Deep Espresso Brown background (`#3E3227`). Off-white text (`#F8F5F0`). Soft rounded corners.
+    * **Social Links:** Row of outline-style icons (GitHub, LinkedIn, YouTube). Color must match Primary Text (Espresso Brown).
 
 **3. ASSET HANDLING**
 
