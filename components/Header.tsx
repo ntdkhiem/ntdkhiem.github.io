@@ -32,8 +32,8 @@ export default function Header() {
                 >
                     <Image src="/linkedin.svg" alt="LinkedIn Profile" width={36} height={36} />
                 </a>
-                <a href="https://github.com/ntdkhiem" target="_blank" className="text-oatmeal-light">
-                    <Image src="/github.svg" alt="GitHub Profile" width={36} height={36} />
+                <a href="https://github.com/ntdkhiem" target="_blank">
+                    <Image src="/github.svg" alt="GitHub Profile" width={36} height={36} color={"#f5f5dc"} className="text-oatmeal-light" />
                 </a>
             </motion.div>
 

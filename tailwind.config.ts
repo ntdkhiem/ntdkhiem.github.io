@@ -17,6 +17,9 @@ const config: Config = {
                 "oatmeal-light": "#F5F5DC",
                 "accent-sage": "#A2AD9C",
             },
+            boxShadow: {
+                "scandi": "0 10px 30px rgba(0, 0, 0, 0.08)",
+            },
             animation: {
                 "ping-slow": "ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite",
                 "bounce-horiz": "bounce-horiz 1s infinite",
