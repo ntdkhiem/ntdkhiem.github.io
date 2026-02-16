@@ -63,7 +63,7 @@ export default function Projects() {
                                       whileHover={{ scale: 1.05, y: -5 }}
                                       transition={{ type: "spring", stiffness: 300, damping: 20 }}
                                   >
-                                                              <h3 className={`text-xl font-bold mb-2 ${lora.className}`}>{project.title}</h3>
+                                                              <h3 className={`text-xl font-bold mb-2 ${lora.className} text-espresso-brown`}>{project.title}</h3>
                                                               <p className="text-base text-espresso-brown mb-4">{project.description}</p>
                                                               <div className="flex flex-wrap gap-2 mb-4">                          {project.technologies.map((tech: string, index: number) => (
                               <span key={index} className="bg-oatmeal-light text-espresso-brown text-xs font-medium px-2.5 py-1 rounded-full">
@@ -100,7 +100,7 @@ export default function Projects() {
                                   whileHover={{ scale: 1.05, y: -5 }}
                                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
                               >
-                                                          <h3 className={`text-xl font-bold mb-2 ${lora.className}`}>{project.title}</h3>
+                                                          <h3 className={`text-xl font-bold mb-2 ${lora.className} text-espresso-brown`}>{project.title}</h3>
                                                           <p className="text-base text-espresso-brown mb-4">{project.description}</p>
                                                           <div className="flex flex-wrap gap-2 mb-4">                          {project.technologies.map((tech: string, index: number) => (
                               <span key={index} className="bg-oatmeal-light text-espresso-brown text-xs font-medium px-2.5 py-1 rounded-full">
