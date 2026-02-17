@@ -16,7 +16,7 @@ const Sections = [
         imageWidth: "w-[300px]",
         imageCaption: "",
         fontColor: "white",
-        subtitle: "Welcome to my portfolio",
+        subtitle: "Welcome to my website",
         title: "I'm Khiem!",
         body: "Click the right arrow to learn more about me!",
     },
