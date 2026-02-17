@@ -11,9 +11,8 @@ export default function Contact() {
                     <Image
                         src="/cta_background.png"
                         alt="Contact Section Background"
-                        layout="fill"
-                        objectFit="cover"
-                        quality={100}
+                        fill={true}
+                        style={{objectFit: "cover"}}
                         className="absolute max-h-[90vh] my-auto inset-0 z-0"
                     />
         

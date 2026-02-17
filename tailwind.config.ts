@@ -11,6 +11,8 @@ const config: Config = {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic":
                     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+                "projects-background": "url('/projects_background.png')",
+                "experiences-background": "url('/experiences_background.png')",
             },
             colors: {
                 "espresso-brown": "#3E3227",
