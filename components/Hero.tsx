@@ -11,14 +11,14 @@ const Sections = [
     {
         backgroundImage: "/background1.JPG",
         backgroundOverlay: "bg-slate-900",
-        image: "/pic1.jpg",
+        image: "/headshot.jpeg",
         imageHeight: "h-[300px]",
         imageWidth: "w-[300px]",
-        imageCaption: "Click the right arrow to learn more about me!",
+        imageCaption: "",
         fontColor: "white",
         subtitle: "Welcome to my portfolio",
         title: "I'm Khiem!",
-        body: "",
+        body: "Click the right arrow to learn more about me!",
     },
     {
         backgroundImage: "/background-career.jpg",
