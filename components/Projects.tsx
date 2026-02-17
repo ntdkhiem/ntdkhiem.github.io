@@ -30,6 +30,7 @@ const PROJECTS: ProjectProp[] = [
         description: "Built a web-based multiplayer caption-battle game using Python over bidirectional TCP connection, WebSocket, and utilized Redis for low-latency state synchronization and NGINX as an application load balancer. Automated microservice deployment on Google Kubernetes using Skaffold for high availability.",
         technologies: ["Python", "WebSocket", "Redis", "Kubernetes", "NGINX"],
         github_link: "github.com/ntdkhiem/caption-this",
+        live_link: "drive.google.com/file/d/1OTQgFsREk5B-b6GyxswJK9pVIPTMDrFb/view?usp=sharing",
     },
     {
         id: 3, // Incrementing from 2
