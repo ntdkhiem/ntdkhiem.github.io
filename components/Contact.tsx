@@ -7,7 +7,7 @@ const lora = Lora({ weight: "700", subsets: ["latin"] });
 
 export default function Contact() {
     return (
-                <section id="contact" className="h-screen relative mx-10 lg:mx-40 py-16 overflow-hidden">
+                <section id="contact" className="h-screen relative mx-10 lg:mx-40 flex items-center justify-center overflow-hidden">
                     <Image
                         src="/cta_background.png"
                         alt="Contact Section Background"
@@ -16,7 +16,7 @@ export default function Contact() {
                         className="absolute max-h-[90vh] my-auto inset-0 z-0"
                     />
         
-                    <div className="relative bg-white p-8 rounded-xl shadow-scandi max-w-lg mx-auto text-center z-10">
+                    <div className="relative bg-white p-8 rounded-xl shadow-scandi max-w-lg text-center z-10">
                         <h2 className={`text-3xl font-bold mb-4 text-espresso-brown ${lora.className}`}>Let&apos;s Connect & Collaborate.</h2>
                                         <p className="text-lg text-espresso-brown mb-8">
                                             Always open to discussing new opportunities, interesting projects, or just chatting about tech.
