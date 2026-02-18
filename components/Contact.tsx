@@ -21,7 +21,7 @@ export default function Contact() {
                                         <p className="text-lg text-espresso-brown mb-8">
                                             Always open to discussing new opportunities, interesting projects, or just chatting about tech.
                                         </p>                        <div className="flex flex-col items-center gap-4">
-                            <a href="mailto:your.email@example.com" className="bg-espresso-brown text-[#F8F5F0] py-3 px-6 rounded-xl hover:opacity-90 transition-opacity">
+                            <a href="mailto:ntdkhiem@gmail.com" className="bg-espresso-brown text-[#F8F5F0] py-3 px-6 rounded-xl hover:opacity-90 transition-opacity">
                                 Email Me
                             </a>
                             <div className="flex justify-center items-center gap-8 text-espresso-brown">
